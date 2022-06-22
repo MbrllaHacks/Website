@@ -8,7 +8,7 @@ function Home(){
             <span className="black-part"> reality</span>
         </div>
         <div className="dates">
-            OCT 08 - OCT 09
+            OCT 07 - OCT 09
         </div>
         <Button variant="primary" className="register">Register now!</Button>
     </div>
