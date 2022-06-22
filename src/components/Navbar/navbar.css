@@ -1,0 +1,18 @@
+* {
+    font-family: 'Space Grotesk';
+}
+
+.typo {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+color: #000000;
+
+}
+
+.nel {
+    margin: 10px;
+}

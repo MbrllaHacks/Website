@@ -1,0 +1,55 @@
+.quote {
+    position: absolute;
+    width: 538px;
+    height: 302px;
+    left: 15%;
+    top: 20%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 80px;
+    /* or 94% */
+
+
+    color: #2883D7;
+}
+
+.black-part {
+    color: black;
+}
+
+.dates {
+    position: absolute;
+    width: 296px;
+    height: 42px;
+    left: 15%;
+    top: 55%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    /* or 150% */
+
+
+    color: #000000;
+}
+
+.register {
+    position: absolute;
+    width: 258px;
+    height: 78px;
+    left: 15%;
+    top: 65%;
+
+    background: #2883D7;
+    box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
+    border-radius: 30px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+}
