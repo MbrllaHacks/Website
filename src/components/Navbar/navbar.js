@@ -15,15 +15,13 @@ function NavbarComp(){
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
-
                 <Nav.Link href="#About" className='typo nel'>About</Nav.Link>
-                <Nav.Link eventKey={2} href="#Sponsers" className='typo nel'>Sponsers</Nav.Link>
+                <Nav.Link eventKey={2} href="#Sponsers" className='typo nel'>Sponsors</Nav.Link>
                 <Nav.Link eventKey={2} href="#FAQ" className='typo nel'>FAQ</Nav.Link>
                 <Nav.Link eventKey={2} href="#@" className='nel'><img src={a} width="35px" ></img></Nav.Link>
-                <Nav.Link eventKey={2} href="#Discord" className='nel'><img src={disc} width="35px"></img></Nav.Link>
-                <Nav.Link eventKey={2} href="#Twitter" className='nel'><img src={twitter} width="35px"></img></Nav.Link>
-                <Nav.Link eventKey={2} href="#Instagram" className='nel'><img src={insta} width="35px"></img></Nav.Link>
-
+                <Nav.Link eventKey={2} href="#Discord" className='nel'><img src={disc} width="35px"></img></Nav.Link>   {/* Add Discord Link here */}
+                <Nav.Link eventKey={2} href="#Twitter" className='nel'><img src={twitter} width="35px"></img></Nav.Link> {/* Add Twitter Link here */}
+                <Nav.Link eventKey={2} href="#Instagram" className='nel'><img src={insta} width="35px"></img></Nav.Link> {/* Add Insta link here   */}
               </Nav>
             </Navbar.Collapse>
             </Container>

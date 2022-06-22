@@ -1,55 +1,87 @@
-.quote {
-    position: absolute;
-    width: 538px;
-    height: 302px;
-    left: 15%;
-    top: 20%;
-
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 85px;
-    line-height: 80px;
-    /* or 94% */
-
-
-    color: #2883D7;
+.register {
+  width: 258px;
+  height: 78px;
+  border-radius: 30px;
+  background: #2883d7;
+  box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
+  border: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 45px;
+  color: #ffffff;
+  position: relative;
+  bottom: 150px;
 }
 
 .black-part {
-    color: black;
+  color: black;
 }
 
 .dates {
-    position: absolute;
-    width: 296px;
-    height: 42px;
-    left: 15%;
-    top: 55%;
-
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 45px;
-    /* or 150% */
-
-
-    color: #000000;
+  width: 296px;
+  height: 42px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  position: relative;
+  bottom: 12%;
+  left: 7%;
 }
 
-.register {
-    position: absolute;
-    width: 258px;
-    height: 78px;
-    left: 15%;
-    top: 65%;
+.prin {
+  width: 250px;
+  transform: rotate(-126.32deg);
+  z-index: -1;
+  position: relative;
+  bottom: 155px;
+  right: 140px;
+}
 
-    background: #2883D7;
-    box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
-    border-radius: 30px;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 29px;
+.home-header {
+  padding-top: 50px !important;
+}
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.home-content {
+  padding-top: 9rem !important;
+}
+
+.quote {
+  position: relative;
+  font-size: 4.5em !important;
+  padding-left: 45px !important;
+  font-family: "Space Grotesk";
+  color: #2883d7;
+  line-height: 80px;
+  width: 65%;
+  bottom: 100px;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .dates {
+    margin: 60px 20px;
+  }
+  .prin {
+    position: relative;
+    left: 120px;
+    bottom: 315px;
+  }
+}
+
+@media (max-width: 765px) {
+  .pc {
+    position: relative;
+    bottom: 350px;
+  }
 }
