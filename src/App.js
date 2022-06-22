@@ -1,9 +1,13 @@
 import './App.css';
+import './components/Navbar/navbar.css';
+import NavbarComp from './components/Navbar/navbar';
+import Home from './components/Home/home';
 
 function App() {
   return (
     <div>
-      <h1>MbrllaHacks</h1>
+      <NavbarComp />
+      <Home />    
     </div>
   );
 }
