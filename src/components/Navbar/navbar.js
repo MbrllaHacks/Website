@@ -17,7 +17,7 @@ function NavbarComp(){
               <Nav>
 
                 <Nav.Link href="#About" className='typo nel'>About</Nav.Link>
-                <Nav.Link eventKey={2} href="#Sponsers" className='typo nel'>Sponsers</Nav.Link>
+                <Nav.Link eventKey={2} href="#Sponsers" className='typo nel'>Sponsors</Nav.Link>
                 <Nav.Link eventKey={2} href="#FAQ" className='typo nel'>FAQ</Nav.Link>
                 <Nav.Link eventKey={2} href="#@" className='nel'><img src={a} width="35px" ></img></Nav.Link>
                 <Nav.Link eventKey={2} href="#Discord" className='nel'><img src={disc} width="35px"></img></Nav.Link>
