@@ -12,6 +12,9 @@ function Home(){
           <Container className="home-content">
             <Row>
                 <Col md={7} className="home-header">
+
+                    {/* Heading */}
+
                     <h1 className="quote">
                         A virtual hackathon to turn ideas into 
                         <span className="black-part"> reality</span>
@@ -20,6 +23,7 @@ function Home(){
                          <Type />
                     </div>
 
+                    {/* Register Button */}
     
                     <div style={{ padding: 50, textAlign: "left" }}>
                         <a href="https://youtu.be/dQw4w9WgXcQ">
@@ -28,7 +32,9 @@ function Home(){
                         <img src={prin} className="prin"></img>
                     </div>
                 </Col>
-    
+
+                    {/* PC image */}
+
                 <Col md={5} style={{ paddingRight: 20 }}>
                     <img src={pc} 
                     alt="PC"
