@@ -1,0 +1,40 @@
+.helloWorld {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #2883d7;
+}
+
+.umbLogo {
+  position: relative;
+  right: 35px;
+}
+
+p {
+  width: 736px;
+  height: 279px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  /* or 138% */
+
+  color: #000000;
+}
+
+.blue {
+  color: #1477d3;
+}
+
+.about-typo {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .about-typo {
+    position: relative;
+    left: 70px;
+  }
+}

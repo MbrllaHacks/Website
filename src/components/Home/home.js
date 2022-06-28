@@ -15,7 +15,7 @@ function Home(){
 
                     {/* Heading */}
 
-                    <h1 className="quote">
+                    <h1 className="quote" >
                         A virtual hackathon to turn ideas into 
                         <span className="black-part"> reality</span>
                     </h1>

@@ -11,7 +11,7 @@ function NavbarComp(){
   return ( <Navbar collapseOnSelect expand="lg">
             <Container>
             <Navbar.Brand href="#home"><img src={logo} width="318px"></img></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
