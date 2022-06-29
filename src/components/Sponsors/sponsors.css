@@ -36,7 +36,12 @@
 }
 
 .prin1 {
+  width: 250px;
+  transform: rotate(-126.32deg);
   z-index: -1;
+  position: relative;
+  bottom: 155px;
+  right: 140px;
 }
 
 @media (max-width: 1400px) {
