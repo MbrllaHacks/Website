@@ -1,5 +1,6 @@
 import "./sponsors.css"
 import hands from "./../../Assets/sponsor-hands.png"
+import sponsorBlur from "./../../Assets/sponsor-blur.png"
 import prin from "./../../Assets/prin.svg"
 
 import {Container, Row, Col} from "react-bootstrap"
@@ -45,6 +46,11 @@ function Sponsors(){
                     className="hands"
                     style={{ maxHeight: "450px" }}
                     ></img>
+
+                    {/* <img src={sponsorBlur} 
+                    alt="blur"
+                    className="sponsor-blur"
+                    ></img> */}
                 </Col>
             </Row>
 

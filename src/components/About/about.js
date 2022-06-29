@@ -10,7 +10,7 @@ import {Container, Row, Col, Particle} from "react-bootstrap"
 function About(){
     return (
         <section>
-        <Container fluid id="home">
+        <Container fluid className="about-section">
           <Container >
             <Row>
                     {/* Girl image */}
@@ -18,7 +18,8 @@ function About(){
                 <Col md={5} >
                     <img src={girl} 
                     alt="Girl"
-                    style={{ maxHeight: "450px" }}
+                    className="girl"
+                    style={{ maxHeight: "700px" }}
                     ></img>
                 </Col>
 

@@ -27,7 +27,7 @@
   line-height: 45px;
   color: #ffffff;
   position: relative;
-  bottom: 150px;
+  bottom: 120px;
 }
 
 .hands {
@@ -40,15 +40,20 @@
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  bottom: 155px;
+  bottom: 125px;
   right: 140px;
+}
+
+.sponsor-blur {
+  position: absolute;
+  bottom: 200px;
 }
 
 @media (max-width: 1400px) {
   .prin1 {
     position: relative;
     left: 150px;
-    bottom: 315px;
+    bottom: 295px;
   }
 }
 

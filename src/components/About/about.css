@@ -11,6 +11,11 @@
   right: 35px;
 }
 
+.about-section {
+  position: relative;
+  bottom: 120px;
+}
+
 p {
   width: 736px;
   height: 279px;
@@ -36,5 +41,19 @@ p {
   .about-typo {
     position: relative;
     left: 70px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+  .girl {
+    width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .girl {
+    position: relative;
+    bottom: 140px;
+    height: 650px;
   }
 }
