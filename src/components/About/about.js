@@ -10,7 +10,7 @@ import {Container, Row, Col, Particle} from "react-bootstrap"
 function About(){
     return (
         <section>
-        <Container fluid className="about-section">
+        <Container fluid className="about-section" id="about">
           <Container >
             <Row>
                     {/* Girl image */}

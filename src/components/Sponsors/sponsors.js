@@ -9,7 +9,7 @@ import {Container, Row, Col} from "react-bootstrap"
 function Sponsors(){
     return (
         <section>
-        <Container>
+        <Container id="sponsors">
           <Container >
             <Row>
 
