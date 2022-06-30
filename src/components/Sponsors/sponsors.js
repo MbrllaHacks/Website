@@ -15,7 +15,7 @@ function Sponsors(){
 
                 <Col md={7} >
 
-                    {/* Heading */}
+                    {/* Text */}
 
                     <div className="sponsor-heading">
                         Sponsors
@@ -38,7 +38,7 @@ function Sponsors(){
                 </Col>
 
                 
-                {/* Girl image */}
+                {/* Hands image */}
 
                 <Col md={5} >
                     <img src={hands} 
@@ -46,11 +46,6 @@ function Sponsors(){
                     className="hands"
                     style={{ maxHeight: "450px" }}
                     ></img>
-
-                    {/* <img src={sponsorBlur} 
-                    alt="blur"
-                    className="sponsor-blur"
-                    ></img> */}
                 </Col>
             </Row>
 

@@ -23,11 +23,11 @@ function About(){
                     ></img>
                 </Col>
 
+                    {/* About Text */}
+
                 <Col md={7} className="about-typo" >
 
                     <img src={logo} className="umbLogo" width="511px" ></img>
-
-                    {/* Heading */}
 
                     <p>
                         A student-run hackathon with the goal to empower hackers of all levels to turn their ideas into reality, with the help of the workshops and resources we make available. In 48 hours, you will be able to develop a project, network with other students from all over the world and learn together!

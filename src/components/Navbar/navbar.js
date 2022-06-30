@@ -12,7 +12,7 @@ function NavbarComp(){
             <Container>
             <Navbar.Brand href="#home"><img src={logo} width="318px"></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse className='please' id="responsive-navbar-nav">
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav className='navele'>
                 <Nav.Link onClick={() => window.location.replace("/#about")} className='typo nel'>About</Nav.Link>
