@@ -1,0 +1,70 @@
+#contact {
+  padding-inline: 15vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__send {
+  width: 105px;
+  height: 40;
+  border-radius: 10px;
+  background: #2883d7;
+  border: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.section__header {
+  font-size: 60px;
+  color: #2883d7;
+  font-weight: 600;
+}
+#contact h5 {
+  font-size: 1.5rem;
+}
+.section__subheader a {
+  color: #2883d7;
+}
+.section__subheader {
+  margin-bottom: 3rem;
+  font-size: 28px;
+}
+.sign-up-box {
+  display: flex;
+  background-color: #303131;
+  color: white;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin-bottom: 2.5rem;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+.sign-up-box h5 {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.links img {
+  margin-inline: 0.6rem;
+  width: 35px;
+  height: 35px;
+}
+.contact-img {
+  width: 456px;
+  height: 416px;
+  position: relative;
+  top: 30px;
+}
+.contact-prin {
+  position: absolute;
+  right: -20%;
+  bottom: -120%;
+  z-index: -1;
+}
+.sign-up-container {
+  position: relative;
+}
