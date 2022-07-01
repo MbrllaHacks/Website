@@ -9,8 +9,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "OCT 07 - OCT 09",
-          "Deadline to apply is ..."
+          "Registration starts soon :("
         ],
         autoStart: true,
         loop: true,

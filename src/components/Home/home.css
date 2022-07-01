@@ -79,9 +79,15 @@
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   .pc {
     position: relative;
     bottom: 350px;
+  }
+  .girl {
+    position: relative;
+    bottom: 180px;
+    left: 100px;
+    height: 700px;
   }
 }
