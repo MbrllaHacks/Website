@@ -1,0 +1,59 @@
+.footer {
+    background-color: #000000;
+    height: 216px;
+    position: relative
+}
+
+
+
+/* UPPER BOX
+.upper-box {
+    width: 100%;
+}
+
+.upper-box-logo{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.upper-box-text{
+    float: right;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+}
+
+.upper-box-text-text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.logo {
+    width: 285px;
+    height: 51px;
+} */
+
+/* LOWER BOX */
+.lower-box {
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+}
+.lower-box-text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    color: #FFFFFF;
+
+}
+
+.lower-box-text-underlined {
+    color: #2883D7;
+    text-decoration: underline;
+}

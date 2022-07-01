@@ -6,7 +6,7 @@ import Home from './components/Home/home';
 import About from './components/About/about.js';
 import Sponsors from './components/Sponsors/sponsors';
 import Contact from "./components/Contact/contact";
-
+import FooterComp from './components/Footer/footer';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <About/>
       <Sponsors/>
       <Contact />
+      <FooterComp />
     </div>
   );
 }
