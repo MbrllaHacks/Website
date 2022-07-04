@@ -27,7 +27,7 @@ function Home(){
     
                     <div style={{ padding: 50, textAlign: "left" }}>
                         <a href="https://youtu.be/dQw4w9WgXcQ">
-                        <button className="register">Be notified!</button>
+                        <button className="register">Get notified!</button>
                         </a>
                         <img src={prin} className="prin"></img>
                     </div>
