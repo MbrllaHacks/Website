@@ -1,9 +1,3 @@
-#contact {
-  padding-inline: 15vw;
-  display: flex;
-  justify-content: space-around;
-}
-
 .button__send {
   width: 105px;
   height: 40;
@@ -61,10 +55,30 @@
 }
 .contact-prin {
   position: absolute;
-  right: -20%;
+  left: 78%;
   bottom: -120%;
   z-index: -1;
+  transform: rotate(-126.32deg);
 }
 .sign-up-container {
   position: relative;
+}
+@media (max-width: 1199px) {
+  .contact-prin {
+    left: 72%;
+  }
+}
+@media (max-width: 991px) {
+  .contact-prin {
+    left: 60%;
+    bottom: 0%;
+    top: -100%;
+  }
+}
+@media (max-width: 767px) {
+  .contact-prin {
+    left: 68%;
+
+    top: -125%;
+  }
 }
