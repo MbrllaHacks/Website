@@ -47,7 +47,6 @@
 
 .home-section {
   position: relative;
-  z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
 }
