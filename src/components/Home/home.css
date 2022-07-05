@@ -1,14 +1,15 @@
 .register {
-  width: 258px;
-  height: 78px;
-  border-radius: 30px;
+  width: 215px;
+  height: 68px;
+  border-radius: 28px;
   background: #2883d7;
   box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
   border: none;
+  margin-left: 10px;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 29px;
+  font-size: 26px;
   line-height: 45px;
   color: #ffffff;
   position: relative;
@@ -20,29 +21,27 @@
 }
 
 .dates {
-  width: 296px;
-  height: 42px;
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-size: 30px;
-  line-height: 45px;
+  font-family: "Fira Code";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 28px;
   color: #000000;
   position: relative;
-  bottom: 12%;
-  left: 7%;
+  margin-left: 30px;
+  bottom: 16%;
 }
 
 .prin {
-  width: 250px;
+  width: 240px;
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  bottom: 155px;
+  bottom: 151px;
   right: 140px;
 }
 
 .home-header {
-  padding-top: 50px !important;
+  padding-top: 5px !important;
 }
 
 .home-section {
@@ -58,13 +57,19 @@
 .quote {
   position: relative;
   font-size: 4.5em !important;
-  padding-left: 45px !important;
+  margin-left: 30px !important;
   font-family: "Space Grotesk";
   color: #2883d7;
-  line-height: 80px;
-  width: 65%;
+  line-height: 73px;
+  width: 70%;
   bottom: 100px;
   font-weight: bold;
+}
+
+.nick {
+  position: relative;
+  bottom: 115px;
+  right: 140px;
 }
 
 @media (max-width: 1200px) {
@@ -75,18 +80,5 @@
     position: relative;
     left: 120px;
     bottom: 315px;
-  }
-}
-
-@media (max-width: 767px) {
-  .pc {
-    position: relative;
-    bottom: 350px;
-  }
-  .girl {
-    position: relative;
-    bottom: 180px;
-    left: 100px;
-    height: 700px;
   }
 }
