@@ -15,12 +15,17 @@
   bottom: 150px;
 }
 
+.register:hover {
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15);
+  color: black;
+}
+
 .black-part {
   color: black;
 }
 
 .dates {
-  width: 296px;
+  width: 100%;
   height: 42px;
   font-family: "Space Grotesk";
   font-style: normal;
@@ -47,7 +52,6 @@
 
 .home-section {
   position: relative;
-  z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -63,7 +67,7 @@
   font-family: "Space Grotesk";
   color: #2883d7;
   line-height: 80px;
-  width: 65%;
+  width: 100%;
   bottom: 100px;
   font-weight: bold;
 }
