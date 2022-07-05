@@ -9,7 +9,7 @@
   font-size: 18px;
   line-height: 31px;
 
-  color: #000000; 
+  color: #000000;
 }
 
 .nel {
@@ -27,4 +27,17 @@
 .navele {
   position: relative;
   top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navToggle {
+    position: absolute;
+    right: 0;
+    margin-right: 10px !important;
+    zoom: 0.9;
+  }
+
+  .navbar-brand {
+    margin-right: 100px !important;
+  }
 }
