@@ -10,14 +10,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/MbrllaHacks/Website">
-    <img src="src/assets/logo.svg" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">Mbrlla Hacks Website</h3>
+<h2 align="center"><a href="https://github.com/MbrllaHacks/Website">Mbrlla Hacks Website</a></h2>
 
   <p align="center">
-    The website for Mbrlla Hacks, A student-run hackathon
+    The website for Mbrlla Hacks | A student-run hackathon
     <br />
     <a href="#website"><strong>Check out the website</strong></a>
     <br />
