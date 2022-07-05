@@ -1,6 +1,6 @@
 import "./home.css"
 import prin from "./../../Assets/prin.svg"
-import pc from "./../../Assets/pc.svg"
+import nick from "./../../Assets/nick.svg"
 import {Container, Row, Col, Particle} from "react-bootstrap"
 import Type from "./Type"
 
@@ -20,12 +20,12 @@ function Home(){
                         <span className="black-part"> reality</span>
                     </h1>
                     <div className="dates">
-                         <Type />
+                      <Type />
                     </div>
 
                     {/* Register Button */}
     
-                    <div style={{ padding: 50, textAlign: "left" }}>
+                    <div style={{ margin: "15px", textAlign: "left" }}>
                         <a href="https://youtu.be/dQw4w9WgXcQ">
                         <button className="register">Get notified!</button>
                         </a>
@@ -35,11 +35,11 @@ function Home(){
 
                     {/* PC image */}
 
-                <Col md={5} style={{ paddingRight: 20 }}>
-                    <img src={pc} 
-                    alt="PC"
-                    className="pc"
-                    style={{ maxHeight: "450px" }}
+                <Col md={4} style={{ paddingRight: 30 }}>
+                    <img src={nick} 
+                    alt="Nick holding a computer"
+                    className="nick"
+                    style={{ maxHeight: "520px"}}
                     ></img>
                 </Col>
             </Row>
