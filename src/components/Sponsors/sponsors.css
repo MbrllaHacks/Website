@@ -27,7 +27,7 @@
   line-height: 45px;
   color: #ffffff;
   position: relative;
-  bottom: 120px;
+  bottom: 110px;
 }
 
 .hands {
@@ -40,7 +40,7 @@
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  bottom: 125px;
+  bottom: 110px;
   right: 140px;
 }
 
@@ -49,11 +49,24 @@
   bottom: 200px;
 }
 
+p {
+  width: 630px;
+  height: 279px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  /* or 138% */
+
+  color: #000000;
+}
+
 @media (max-width: 1400px) {
   .prin1 {
     position: relative;
     left: 150px;
-    bottom: 295px;
+    bottom: 275px;
   }
 }
 
