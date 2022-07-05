@@ -16,8 +16,7 @@ function NavbarComp(){
               <Nav className="me-auto"></Nav>
               <Nav className='navele'>
                 <Nav.Link onClick={() => window.location.replace("/#about")} className='typo nel'>About</Nav.Link>
-                <Nav.Link 
-                eventKey={2} onClick={() => window.location.replace("/#sponsors")} className='typo nel'>Sponsors</Nav.Link>
+                <Nav.Link onClick={() => window.location.replace("/#sponsors")} className='typo nel'>Sponsors</Nav.Link>
                 <Nav.Link onClick={() => window.location.replace("/#faq")} className='typo nel'>FAQ</Nav.Link>
                 <Nav.Link href="#@" className='nel'><img src={a} width="35px" ></img></Nav.Link>
                 <Nav.Link href="#Discord" className='nel'><img src={disc} width="35px"></img></Nav.Link>    {/* Add Discord Link here */}
