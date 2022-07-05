@@ -89,8 +89,9 @@ Install the following:
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install --force
    ```
+   _The --force flag is for solving an react issue_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
