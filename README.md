@@ -74,7 +74,7 @@ Install the following:
   ```
 - git
   ```sh
-    https://git-scm.com/downloads
+  https://git-scm.com/downloads
   ```
 
 ### Installation
