@@ -6,8 +6,6 @@
 trigger:
 - main
 
-pool: linode main
-
 steps:
 - script: |
     npm install --force
