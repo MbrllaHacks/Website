@@ -70,7 +70,7 @@ Install the following:
 
 - npm
   ```sh
-  npm install--force
+  npm install --force
   ```
   _The --force flag is for temporarily solving issues with react versions_
 - git
