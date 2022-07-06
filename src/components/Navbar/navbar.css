@@ -24,3 +24,9 @@
   position: relative;
   top: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .smaller-size {
+    width: 212px !important;
+  }
+}
