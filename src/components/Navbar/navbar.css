@@ -5,15 +5,19 @@
 .typo {
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 31px;
 
   color: #000000;
 }
 
 .nel {
-  margin: 10px;
+  margin: 5px;
+}
+
+.spc {
+  margin-left: 35px;
 }
 
 .toggle {
@@ -28,5 +32,5 @@
 @media screen and (max-width: 600px) {
   .smaller-size {
     width: 212px !important;
-  }
+  } 
 }

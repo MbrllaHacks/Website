@@ -1,10 +1,10 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from './../../Assets/logo.svg'
-import a from './../../Assets/a.svg'
-import disc from './../../Assets/disc.svg'
-import twitter from './../../Assets/twitter.svg'
-import insta from './../../Assets/instagram.svg'
-import "./navbar.css"
+import { Navbar, Nav, Container } from "react-bootstrap";
+import logo from "./../../Assets/logo.svg";
+import a from "./../../Assets/a.svg";
+import disc from "./../../Assets/disc.svg";
+import twitter from "./../../Assets/twitter.svg";
+import insta from "./../../Assets/instagram.svg";
+import "./navbar.css";
 
 
 function NavbarComp(){
@@ -29,4 +29,4 @@ function NavbarComp(){
   )
 }
 
-export default NavbarComp
+export default NavbarComp;
