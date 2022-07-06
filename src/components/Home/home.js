@@ -19,9 +19,9 @@ function Home(){
                         A virtual hackathon to turn ideas into 
                         <span className="black-part"> reality</span>
                     </h1>
-//                     <div className="dates">
+{/* //                     <div className="dates">
 //                       <Type />
-//                     </div>
+//                     </div> */}
 
                     {/* Register Button */}
     
