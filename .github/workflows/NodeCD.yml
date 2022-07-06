@@ -13,6 +13,7 @@ jobs:
     name: Build and Deploy Job
     env:
       BUILD_PATH : /root/Website/build
+      CI: ""
     steps:
       - uses: actions/checkout@v3
       - name: Build And Deploy
