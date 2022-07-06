@@ -33,6 +33,7 @@
   .navToggle {
     position: absolute;
     right: 0;
+    bottom: 20;
     margin-right: 10px !important;
     zoom: 0.9;
   }
