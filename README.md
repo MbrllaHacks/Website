@@ -6,6 +6,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
+[![.github/workflows/NodeCD.yml](https://github.com/MbrllaHacks/Website/actions/workflows/NodeCD.yml/badge.svg?branch=main)](https://github.com/MbrllaHacks/Website/actions/workflows/NodeCD.yml)
 
 <!-- PROJECT LOGO -->
 <br />
