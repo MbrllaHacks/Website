@@ -2,7 +2,6 @@ import "./home.css"
 import prin from "./../../Assets/prin.svg"
 import nick from "./../../Assets/nick.svg"
 import {Container, Row, Col, Particle} from "react-bootstrap"
-import Type from "./Type"
 
 
 function Home(){
@@ -19,9 +18,6 @@ function Home(){
                         A virtual hackathon to turn ideas into 
                         <span className="black-part"> reality</span>
                     </h1>
-//                     <div className="dates">
-//                       <Type />
-//                     </div>
 
                     {/* Register Button */}
     
