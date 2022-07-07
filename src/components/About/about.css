@@ -4,28 +4,20 @@
   font-weight: 400;
   font-size: 45px;
   color: #2883d7;
-  padding-bottom: 5px;
 }
 
-.umbLogo {
+.about-nick {
   position: relative;
-  right: 35px;
+  right: 40px;
 }
 
-.about-section {
-  position: relative;
-  bottom: 120px;
-}
-
-p {
+.about-text {
   width: 700px;
-  height: 279px;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 40px;
-  /* or 138% */
 
   color: #000000;
 }
@@ -34,22 +26,28 @@ p {
   color: #1477d3;
 }
 
-.about-typo {
-  padding-top: 80px;
-  margin: 20px;
-}
-
-.nickumbrella {
-  width: 400px;
+.about-logo {
   position: relative;
-  left: -100px;
-  transform: rotate(4.33deg);
-  height: 650px;
+  right: 30px;
 }
 
-@media only screen and (max-width: 991px) and (min-width: 767px) {
-  .about-typo {
-    position: relative;
-    left: 70px;
+@media (max-width: 1200px) {
+  .about-text {
+    width: 600px;
+  }
+}
+
+@media (max-width: 986px) {
+  .about-text {
+    width: 700px;
+  }
+  .about-logo {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-text {
+    width: 100%;
   }
 }

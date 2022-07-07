@@ -19,7 +19,7 @@ function NavbarComp() {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="navele">
+          <Nav className="navele align-items-center">
             <Nav.Link
               onClick={() => window.location.replace("/#about")}
               className="typo nel"
@@ -40,20 +40,20 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#@" className="nel spc">
+            <Nav.Link eventKey={2} href="#@" className="nel">
               <img src={a} width="30px"></img>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#Discord" className="nel">
               <img src={disc} width="30px"></img>
-            </Nav.Link>{" "}
+            </Nav.Link>
             {/* Add Discord Link here */}
             <Nav.Link eventKey={2} href="#Twitter" className="nel">
               <img src={twitter} width="30px"></img>
-            </Nav.Link>{" "}
+            </Nav.Link>
             {/* Add Twitter Link here */}
             <Nav.Link eventKey={2} href="#Instagram" className="nel">
               <img src={insta} width="30px"></img>
-            </Nav.Link>{" "}
+            </Nav.Link>
             {/* Add Insta link here   */}
           </Nav>
         </Navbar.Collapse>
