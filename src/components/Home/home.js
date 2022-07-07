@@ -7,21 +7,25 @@ import {Container, Row, Col, Particle} from "react-bootstrap"
 function Home(){
     return (
         <section>
-        <Container fluid className="home-section" id="home">
-          <Container className="home-content">
+        <Container id="home">
+          <Container className="home-section">
             <Row>
-                <Col md={7} className="home-header">
+                <Col lg={7} >
 
                     {/* Heading */}
 
-                    <h1 className="quote">
+                    <div className="quote">
                         A virtual hackathon to turn ideas into 
-                        <span className="black-part"> reality</span>
-                    </h1>
+                        <span className="blackPart"> reality</span>
+                    </div>
+
+                    <div className="dates">
+                        OCT 08 - OCT 09
+                    </div>
 
                     {/* Register Button */}
     
-                    <div style={{ margin: "15px", textAlign: "left" }}>
+                    <div style={{ padding: 20 }}>
                         <a href="https://youtu.be/dQw4w9WgXcQ">
                         <button className="register">Get notified!</button>
                         </a>
@@ -29,13 +33,12 @@ function Home(){
                     </div>
                 </Col>
 
-                    {/* PC image */}
+                    {/* Nick image */}
 
-                <Col md={4} style={{ paddingRight: 30 }}>
+                <Col lg={5}>
                     <img src={nick} 
                     alt="Nick holding a computer"
-                    className="nick"
-                    style={{ maxHeight: "520px"}}
+                    className="img-fluid home-nick"
                     ></img>
                 </Col>
             </Row>

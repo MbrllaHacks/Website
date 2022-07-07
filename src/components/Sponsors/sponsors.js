@@ -10,43 +10,46 @@ function Sponsors(){
     return (
         <section>
         <Container id="sponsors">
-          <Container >
+          <Container className="sponsors-section">
             <Row>
 
-                <Col md={7} >
+            <Col lg={7} >
 
-                    {/* Text */}
+                {/* Text */}
 
-                    <div className="sponsor-heading">
-                        Sponsors
-                    </div>
+                <div className="sponsors-heading">
+                    Sponsors
+                </div>
 
-                    <p>
-                    The support of our wonderful sponsors allows hackers to produce something they are proud of.
-                    <br/>
-                    <br/>
-                    Interested in becoming a sponsor?
-                    </p>
+                <p className="sponsors-text">
+                The support of our wonderful sponsors allows hackers to produce something they are proud of.
+                <br/>
+                <br/>
+                Interested in becoming a sponsor?
+                </p>
 
-                    <div style={{ padding: 50, textAlign: "left" }}>
-                        <a href="https://youtu.be/dQw4w9WgXcQ">
-                        <button className="sponsorUs">Become a Sponsor</button>
-                        </a>
-                        <img src={prin} className="prin1"></img>
-                    </div>
+                <div className="sponsor-button">
+                    <a href="https://youtu.be/dQw4w9WgXcQ">
+                    <button className="sponsorUs">Become a Sponsor</button>
+                    </a>
+                    <img src={prin} className="sponsors-prin"></img>
+                </div>
 
-                </Col>
+            </Col>
+
+            <Col lg={5} >
+                    <img src={hands} 
+                    alt="hands"
+                    className="img-fluid sponsors-img"
+                    style={{ maxHeight: "400px" }}
+                    ></img>
+            </Col>
+
+                
 
                 
                 {/* Hands image */}
 
-                <Col md={5} >
-                    <img src={hands} 
-                    alt="hands"
-                    className="hands"
-                    style={{ maxHeight: "450px" }}
-                    ></img>
-                </Col>
             </Row>
 
           </Container>
