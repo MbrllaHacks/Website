@@ -6,29 +6,30 @@ import pc2 from "./../../Assets/pc2.svg";
 import prin from "./../../Assets/prin.svg";
 import "./contact.css";
 import { Container, Row, Col } from "react-bootstrap";
+
+
 function Contact() {
   return (
-    <section id="contact">
-      <Container id="sponsors">
+    <section >
+      <Container className="contact-section" id="contact">
         <Row>
-          <Col md={7}>
-            <h3 class="section__header">Still have questions?</h3>
-            <h5 class="section__subheader">
+          <Col lg={7}>
+            <div className="contact-header">Still have questions?</div>
+            <div className="contact-body">
               Contact us at{" "}
               <a href="mailto:contact@mbrllahacks.ca">contact@mbrllahacks.ca</a>
-            </h5>
-            <div class="sign-up-container">
-              <img class="contact-prin" alt="prin" src={prin}></img>
-              <div class="sign-up-box">
-                <h5>Sign up for updates!</h5>
-                <a href="#send">
-                  <button class="button__send">Send</button>
-                </a>
-              </div>
             </div>
 
-            <div class="links">
-              <a href="#@" className="nel">
+            <div className="sign-up">
+              <span className="sign-up-box">Sign up for updates! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#send">
+                <button className="button-send">Send</button>
+              </a>
+              </span>
+            </div>
+
+            <div className="socials">
+              <a href="#@" >
                 <img src={a}></img>
               </a>
               <a href="#Discord">
@@ -43,8 +44,8 @@ function Contact() {
             </div>
           </Col>
 
-          <Col md={5}>
-            <img class="contact-img" src={pc2} alt="Pc2"></img>
+          <Col lg={5}>
+            <img className="img-fluid contact-img" src={pc2} alt="Pc2"></img>
           </Col>
         </Row>
       </Container>

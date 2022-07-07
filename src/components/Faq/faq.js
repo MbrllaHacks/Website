@@ -12,7 +12,6 @@ function Faq(){
                 <Container className="faq-content">
                     <img src={crossPattern} className="pattern"></img>
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
-                    <img src={fancyUnderline} className="underline"></img>
 
                     <Row className="faq-body">
                         <Col id="col1">
