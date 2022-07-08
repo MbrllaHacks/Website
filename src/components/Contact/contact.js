@@ -24,7 +24,7 @@ function Contact() {
 
             <div className="sign-up">
               <span className="sign-up-box">Sign up for updates! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#send">
+              <a href="mailto:contact@mbrllahacks.ca">
                 <button className="button-send">Send</button>
               </a>
               </span>
