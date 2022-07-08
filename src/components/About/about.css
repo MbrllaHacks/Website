@@ -2,29 +2,22 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 45px;
   color: #2883d7;
 }
 
-.umbLogo {
+.about-nick {
   position: relative;
-  right: 35px;
+  right: 40px;
 }
 
-.about-section {
-  position: relative;
-  bottom: 120px;
-}
-
-p {
-  width: 736px;
-  height: 279px;
+.about-text {
+  width: 700px;
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 400;
-  font-size: 29px;
+  font-weight: 600;
+  font-size: 25px;
   line-height: 40px;
-  /* or 138% */
 
   color: #000000;
 }
@@ -33,27 +26,28 @@ p {
   color: #1477d3;
 }
 
-.about-typo {
-  padding: 20px;
+.about-logo {
+  position: relative;
+  right: 30px;
 }
 
-@media only screen and (max-width: 991px) and (min-width: 767px) {
-  .about-typo {
-    position: relative;
-    left: 70px;
+@media (max-width: 1200px) {
+  .about-text {
+    width: 600px;
   }
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 767px) {
-  .girl {
-    width: 400px;
+@media (max-width: 986px) {
+  .about-text {
+    width: 700px;
+  }
+  .about-logo {
+    width: 90%;
   }
 }
 
 @media (max-width: 767px) {
-  .girl {
-    position: relative;
-    bottom: 140px;
-    height: 650px;
+  .about-text {
+    width: 100%;
   }
 }
