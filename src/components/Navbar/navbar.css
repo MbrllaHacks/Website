@@ -5,22 +5,23 @@
 .typo {
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 31px;
-
   color: #000000;
 }
 
 .nel {
-  margin: 10px;
-}
-
-.toggle {
-  color: red;
+  margin: 5px;
 }
 
 .navele {
   position: relative;
   top: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand {
+    width: 200px;
+  }
 }

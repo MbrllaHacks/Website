@@ -1,14 +1,14 @@
-.sponsor-heading {
+.sponsors-section {
+  margin-top: 70px;
+}
+
+.sponsors-heading {
   width: 298px;
   height: 86px;
-  left: 0px;
-  top: 213px;
-
   font-family: "Anek Latin", sans-serif;
   font-style: normal;
   font-size: 68px;
   line-height: 90px;
-  /* or 132% */
 
   color: #2883d7;
 }
@@ -23,59 +23,69 @@
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 29px;
+  font-size: 24px;
   line-height: 45px;
   color: #ffffff;
-  position: relative;
-  bottom: 120px;
+  margin: 30px;
 }
 
-.hands {
-  padding: 20px;
-  padding-left: 100px;
-}
-
-.prin1 {
+.sponsors-prin {
   width: 250px;
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  bottom: 125px;
-  right: 140px;
+  right: 170px;
 }
 
-.sponsor-blur {
-  position: absolute;
-  bottom: 200px;
+.sponsors-text {
+  width: 600px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 40px;
+
+  color: #000000;
 }
 
-@media (max-width: 1400px) {
-  .prin1 {
+@media (min-width: 990px) and (max-width: 1200px) {
+  .sponsors-prin {
     position: relative;
-    left: 150px;
-    bottom: 295px;
+    bottom: 190px;
+    left: 180px;
   }
 }
 
-@media (max-width: 1200px) {
-  .hands {
+@media (min-width: 767px) and (max-width: 990px) {
+  .sponsors-prin {
     position: relative;
-    left: 80px;
-  }
-}
-
-@media (max-width: 991px) {
-  .hands {
-    position: relative;
-    left: 200px;
+    left: -170px;
+    bottom: 0px;
   }
 }
 
 @media (max-width: 767px) {
-  .hands {
+  .sponsors-prin {
     position: relative;
-    left: 0px;
-    bottom: 300px;
-    height: 1000px;
+    left: 120px;
+    bottom: 190px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sponsors-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sponsorUs {
+    width: 220px;
+    height: 70px;
+    font-size: 19px;
+  }
+  .sponsors-prin {
+    position: absolute;
+    display: none;
   }
 }
