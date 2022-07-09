@@ -8,7 +8,6 @@ import Sponsors from './components/Sponsors/sponsors';
 import Contact from "./components/Contact/contact";
 import FooterComp from './components/Footer/footer';
 import Faq from './components/Faq/faq';
-import Contact from './components/Contact/contact';
 import Teams from './components/Teams/Teams.js'
 
 
