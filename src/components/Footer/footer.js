@@ -31,34 +31,6 @@ function FooterComp() {
         </Row>
       </Container>
     </section>
-
-    // <section>
-    //   <footer id="sticky-footer" class="flex-shrink-0 py-4" className="footer">
-    //     <Row>
-    //       <div className="upper-box">
-    //     <Col>
-    //         <div className="upper-box-logo">
-    //           <img src={logo_white} alt="logo" className="logo" />
-    //         </div>
-    //     </Col>
-    //     <Col>
-    //         <div className="upper-box-text">
-    //           <text className="upper-box-text-text">Code of Conduct</text>
-    //           <text className="upper-box-text-text">Privacy Policy</text>
-    //         </div>
-    //     </Col>
-    //       </div>
-    //     </Row>
-    //     <Row>
-    //       <div className="lower-box">
-    //         <text className="lower-box-text">
-    //           Pictures from{" "}
-    //           <span className="lower-box-text-underlined">Streamline</span>
-    //         </text>
-    //       </div>
-    //     </Row>
-    //   </footer>
-    // </section>
   );
 }
 
