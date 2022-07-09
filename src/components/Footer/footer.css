@@ -1,47 +1,39 @@
 .footer {
     background-color: #000000;
-    height: 216px;
     position: relative
 }
 
-
-
-/* UPPER BOX
-.upper-box {
-    width: 100%;
-}
-
-.upper-box-logo{
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-.upper-box-text{
-    float: right;
-    width: 50%;
-    padding: 10px;
-    text-align: right;
-}
-
-.upper-box-text-text {
+.upper-box-text {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 45px;
     color: #FFFFFF;
+    margin: 20px
 }
-.logo {
-    width: 285px;
-    height: 51px;
-} */
 
-/* LOWER BOX */
+@media (max-width: 986px) {
+    .upper-box-text {
+      font-size: 15px;
+      margin-left: 0px;
+    }
+    .upper-box-col-right {
+        text-align: left !important;
+    }
+    .upper-box-col {
+        padding: 10px !important;
+    }
+}
+.upper-box-col {
+    padding: 30px;
+}
+.upper-box-col-right {
+    text-align: right;
+}
+
 .lower-box {
-    text-align: center;
-    height: 50px;
-    vertical-align: bottom;
+    padding-bottom: 20px;
 }
 .lower-box-text {
     font-family: 'Space Grotesk';
@@ -50,10 +42,42 @@
     font-size: 20px;
     line-height: 45px;
     color: #FFFFFF;
-
 }
+
 
 .lower-box-text-underlined {
     color: #2883D7;
     text-decoration: underline;
+} 
+
+.lower-text-box {
+    text-align: center;
 }
+
+/* UPPER BOX
+.upper-box {
+    width: 100%;
+}
+
+
+.upper-box-text{
+    float: right;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+}
+
+.logo {
+    width: 285px;
+    height: 51px;
+} */
+
+/* LOWER BOX */
+/* .lower-box {
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+
+*/
