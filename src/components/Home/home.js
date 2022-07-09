@@ -1,45 +1,44 @@
 import "./home.css"
 import prin from "./../../Assets/prin.svg"
-import pc from "./../../Assets/pc.svg"
+import nick from "./../../Assets/nick.svg"
 import {Container, Row, Col, Particle} from "react-bootstrap"
-import Type from "./Type"
 
 
 function Home(){
     return (
         <section>
-        <Container fluid className="home-section" id="home">
-          <Container className="home-content">
+        <Container id="home">
+          <Container className="home-section">
             <Row>
-                <Col md={7} className="home-header">
+                <Col lg={7} >
 
                     {/* Heading */}
 
-                    <h1 className="quote">
+                    <div className="quote">
                         A virtual hackathon to turn ideas into 
-                        <span className="black-part"> reality</span>
-                    </h1>
+                        <span className="blackPart"> reality</span>
+                    </div>
+
                     <div className="dates">
-                         <Type />
+                        OCT 08 - OCT 09
                     </div>
 
                     {/* Register Button */}
     
-                    <div style={{ padding: 50, textAlign: "left" }}>
-                        <a href="https://youtu.be/dQw4w9WgXcQ">
-                        <button className="register">Be notified!</button>
+                    <div style={{ padding: 20 }}>
+                        <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
+                        <button className="register">Get notified!</button>
                         </a>
                         <img src={prin} className="prin"></img>
                     </div>
                 </Col>
 
-                    {/* PC image */}
+                    {/* Nick image */}
 
-                <Col md={5} style={{ paddingRight: 20 }}>
-                    <img src={pc} 
-                    alt="PC"
-                    className="pc"
-                    style={{ maxHeight: "450px" }}
+                <Col lg={5}>
+                    <img src={nick} 
+                    alt="Nick holding a computer"
+                    className="img-fluid home-nick"
                     ></img>
                 </Col>
             </Row>

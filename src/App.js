@@ -1,12 +1,15 @@
 
 import './App.css';
 import './components/Navbar/navbar.css';
-import NavbarComp from './components/Navbar/navbar';
+import NavbarComp from './components/Navbar/navbar.js';
 import Home from './components/Home/home';
-import About from './components/About/about.js';
+import About from './components/About/about';
 import Sponsors from './components/Sponsors/sponsors';
 import Contact from "./components/Contact/contact";
 import FooterComp from './components/Footer/footer';
+import Faq from './components/Faq/faq';
+
+
 
 function App() {
   return (
@@ -15,6 +18,7 @@ function App() {
       <Home />
       <About/>
       <Sponsors/>
+      <Faq/>
       <Contact />
       <FooterComp />
     </div>

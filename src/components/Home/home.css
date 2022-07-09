@@ -1,92 +1,88 @@
 .register {
-  width: 258px;
-  height: 78px;
-  border-radius: 30px;
+  width: 215px;
+  height: 68px;
+  border-radius: 28px;
   background: #2883d7;
   box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
   border: none;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 29px;
+  font-size: 26px;
   line-height: 45px;
   color: #ffffff;
-  position: relative;
-  bottom: 150px;
 }
 
-.black-part {
+.blackPart {
   color: black;
 }
 
 .dates {
-  width: 296px;
-  height: 42px;
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-size: 30px;
-  line-height: 45px;
+  font-family: "Fira Code";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 28px;
   color: #000000;
-  position: relative;
-  bottom: 12%;
-  left: 7%;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .prin {
-  width: 250px;
+  width: 240px;
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  bottom: 155px;
   right: 140px;
 }
 
-.home-header {
-  padding-top: 50px !important;
-}
-
 .home-section {
-  position: relative;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.home-content {
-  padding-top: 9rem !important;
+  margin-top: 90px;
 }
 
 .quote {
-  position: relative;
-  font-size: 4.5em !important;
-  padding-left: 45px !important;
   font-family: "Space Grotesk";
-  color: #2883d7;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 85px;
   line-height: 80px;
-  width: 65%;
-  bottom: 100px;
-  font-weight: bold;
+  color: #2883d7;
 }
 
-@media (max-width: 1200px) {
-  .dates {
-    margin: 60px 20px;
+@media (max-width: 766px) {
+  .home-nick {
+    position: relative;
+    bottom: 90px;
   }
+}
+
+@media (min-width: 575px) and (max-width: 766px) {
   .prin {
     position: relative;
-    left: 120px;
-    bottom: 315px;
+    bottom: 150px;
+    left: 70px;
   }
 }
 
-@media (max-width: 767px) {
-  .pc {
+@media (min-width: 540px) and (max-width: 575px) {
+  .prin {
     position: relative;
-    bottom: 350px;
+    top: 0;
   }
-  .girl {
+}
+
+@media (max-width: 541px) {
+  .prin {
     position: relative;
-    bottom: 180px;
-    left: 100px;
-    height: 700px;
+    bottom: 150px;
+    left: 70px;
+  }
+  .quote {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #2883d7;
   }
 }
