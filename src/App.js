@@ -7,6 +7,7 @@ import About from './components/About/about';
 import Sponsors from './components/Sponsors/sponsors';
 import Faq from './components/Faq/faq';
 import Contact from './components/Contact/contact';
+import Teams from './components/Teams/teams.js'
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Sponsors/>
       <Faq/>
       <Contact />
+      <Teams />
     </div>
   );
 }

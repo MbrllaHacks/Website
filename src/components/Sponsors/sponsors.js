@@ -1,6 +1,5 @@
 import "./sponsors.css"
 import hands from "./../../Assets/sponsor-hands.png"
-import sponsorBlur from "./../../Assets/sponsor-blur.png"
 import prin from "./../../Assets/prin.svg"
 
 import {Container, Row, Col} from "react-bootstrap"

@@ -1,26 +1,26 @@
 import React from 'react'
-import teamscss from './teams.module.css'
+import './teams.css'
 import {Container} from "react-bootstrap"
 
-function teams() {
+function Teams() {
   return (
     <Container>
-    <div className={teamscss.main}>
-        <div className={teamscss.top}>
+    <div className="main">
+        <div className="teamscss.top">
             <b>Brought to you by</b>
         </div>
-        <div className={teamscss.middle}>
+        <div className="middle">
             Wilson,Lead Organizer
         </div>
-        <div className={teamscss.bottom}>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
-            <div className={teamscss.circles}></div>
+        <div className="bottom">
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
         </div>
     </div>
     </Container>
@@ -28,4 +28,4 @@ function teams() {
   )
 }
 
-export default teams
+export default Teams
