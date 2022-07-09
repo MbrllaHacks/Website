@@ -24,6 +24,9 @@
     .upper-box-col {
         padding: 10px !important;
     }
+    .lower-text-box {
+        text-align: left !important;
+    }
 }
 .upper-box-col {
     padding: 30px;
