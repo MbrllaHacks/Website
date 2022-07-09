@@ -1,66 +1,71 @@
-#faq-title{
-    font-size: 4em;
-    font-weight: bold! important;
-    color: #2883d7;
-    padding-bottom: 0;
-    margin: 0px;
+#faq-title {
+  font-size: 4em;
+  font-weight: bold !important;
+  color: red;
+  padding-bottom: 0;
+  margin: 0px;
+  margin-bottom: 40px;
 }
 
-img.underline{
-    width: 64.59vh;
-    z-index: -1;
-    position: relative;
-    bottom: 15.82vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    margin: 0px;
+.faq-section {
+  margin-top: 20px;
 }
 
-img.underline{
-    width: 64.59vh;
-    z-index: -1;
-    position: relative;
-    bottom: 15.82vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    margin: 0px;
-    rotate: 90deg;
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
-#faq-question{
-    font-weight: bold;
-    font-size: larger;
-    display: block;
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+  rotate: 90deg;
 }
 
-.expand-button{
-    display: inline-block;
-    font-size: larger;
+#faq-question {
+  font-weight: bold;
+  font-size: larger;
+  display: block;
 }
 
-#col1{
-    margin-right: 5em;
+.expand-button {
+  display: inline-block;
+  font-size: larger;
 }
 
-.collapsible-group .expand-button{
-    font-weight: bold;
-    color: #000;
-    border: unset;
-    background-color: #fff;
-    width: 2em;
+#col1 {
+  margin-right: 5em;
 }
 
-.collapsible-group .group-content{
-    /*height: 0em;*/
-    overflow: hidden;
-    transition: height ease-in 10s! important;
+.collapsible-group .expand-button {
+  font-weight: bold;
+  color: #000;
+  border: unset;
+  background-color: #fff;
+  width: 2em;
 }
 
-.expand-button:hover{
-    cursor: pointer;
-    color: #2883d7;
+.collapsible-group .group-content {
+  /*height: 0em;*/
+  overflow: hidden;
+  transition: height ease-in 10s !important;
+}
+
+.expand-button:hover {
+  cursor: pointer;
+  color: #2883d7;
 }
