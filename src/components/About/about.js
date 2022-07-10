@@ -3,7 +3,7 @@ import nickumbrella from "./../../Assets/nickumbrella.svg"
 import logo from "./../../Assets/logo.svg"
 
 
-import {Container, Row, Col, Particle} from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 
 
 function About(){

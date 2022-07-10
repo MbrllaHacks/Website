@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./../../Assets/logo.svg";
-import a from "./../../Assets/a.svg";
 import disc from "./../../Assets/disc.svg";
 import twitter from "./../../Assets/twitter.svg";
 import insta from "./../../Assets/instagram.svg";
@@ -13,7 +12,7 @@ function NavbarComp() {
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} width="285px" className="nel mw-100"></img>
+          <img src={logo} width="285px" className="nel mw-100" alt="logo"></img>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -43,21 +42,21 @@ function NavbarComp() {
               FAQ
             </Nav.Link>
             <Nav.Link eventKey={2} href="#youtube" className="nel">
-              <img src={youtube} width="30px"></img>
+              <img src={youtube} width="30px" alt="Youtube"></img>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#linkedin" className="nel">
-              <img src={linkedin} width="30px"></img>
+              <img src={linkedin} width="30px" alt="Linkedin"></img>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#Discord" className="nel">
-              <img src={disc} width="30px"></img>
+              <img src={disc} width="30px" alt="Discord"></img>
             </Nav.Link>
             {/* Add Discord Link here */}
             <Nav.Link eventKey={2} href="#Twitter" className="nel">
-              <img src={twitter} width="30px"></img>
+              <img src={twitter} width="30px" alt="Twitter"></img>
             </Nav.Link>
             {/* Add Twitter Link here */}
             <Nav.Link eventKey={2} href="#Instagram" className="nel">
-              <img src={insta} width="30px"></img>
+              <img src={insta} width="30px" alt="Instagram"></img>
             </Nav.Link>
             {/* Add Insta link here   */}
           </Nav>

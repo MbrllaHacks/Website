@@ -1,7 +1,7 @@
 import "./home.css"
 import prin from "./../../Assets/prin.svg"
 import nick from "./../../Assets/nick.svg"
-import {Container, Row, Col, Particle} from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 
 
 function Home(){
@@ -29,7 +29,7 @@ function Home(){
                         <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
                         <button className="register">Get notified!</button>
                         </a>
-                        <img src={prin} className="prin"></img>
+                        <img src={prin} className="prin" alt="prin"></img>
                     </div>
                 </Col>
 

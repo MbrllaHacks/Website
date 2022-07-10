@@ -1,9 +1,7 @@
-import a from "./../../Assets/a.svg";
 import disc from "./../../Assets/disc.svg";
 import twitter from "./../../Assets/twitter.svg";
 import insta from "./../../Assets/instagram.svg";
 import pc2 from "./../../Assets/pc2.svg";
-import prin from "./../../Assets/prin.svg";
 import linkedin from "./../../Assets/linkedin.svg";
 import youtube from "./../../Assets/youtube.svg";
 import "./contact.css";
@@ -32,19 +30,19 @@ function Contact() {
 
             <div className="socials">
               <a href="#youtube" >
-                <img src={youtube}></img>
+                <img src={youtube} alt="Youtube"></img>
               </a>
               <a href="#linkedin" >
-                <img src={linkedin}></img>
+                <img src={linkedin} alt="Linkedin"></img>
               </a>
               <a href="#Discord">
-                <img src={disc}></img>
+                <img src={disc} alt="Discord"></img>
               </a>{" "}
               <a href="#Twitter">
                 <img src={twitter} alt="Twitter"></img>
               </a>{" "}
               <a href="#Instagram">
-                <img src={insta} alt="Twitter"></img>
+                <img src={insta} alt="Instagram"></img>
               </a>
             </div>
           </Col>
