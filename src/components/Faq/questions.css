@@ -1,0 +1,44 @@
+.collapsible-group{
+    display: flex;
+}
+
+.collapsible-group .expand-button{
+    font-weight: bold;
+    color: #000;
+    border: unset;
+    background-color: #fff;
+    width: 2em;
+}
+
+.expand-button{
+    display: inline-block;
+    font-size: larger;
+}
+
+.expand-button:hover{
+    cursor: pointer;
+    color: #2883d7;
+}
+
+.collapsible-group .group-content{
+    max-height: 0;
+    transition-timing-function: linear;
+    transition: max-height 2s;
+    overflow: hidden;
+}
+
+.collapsible-group .group-content.active{
+    max-height: 100em;
+}
+
+/*.randomItem{
+    height: 100px;
+    width: 200px;
+    background-color: #000;
+    transition-timing-function: linear;
+    transition: height 3s;
+}
+
+.randomItem.active{
+    height: 200px;
+}*/
