@@ -4,6 +4,8 @@ import twitter from "./../../Assets/twitter.svg";
 import insta from "./../../Assets/instagram.svg";
 import pc2 from "./../../Assets/pc2.svg";
 import prin from "./../../Assets/prin.svg";
+import linkedin from "./../../Assets/linkedin.svg";
+import youtube from "./../../Assets/youtube.svg";
 import "./contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -22,15 +24,18 @@ function Contact() {
 
             <div className="sign-up">
               <span className="sign-up-box">Sign up for updates! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#send">
+              <a href="mailto:contact@mbrllahacks.ca">
                 <button className="button-send">Send</button>
               </a>
               </span>
             </div>
 
             <div className="socials">
-              <a href="#@" >
-                <img src={a}></img>
+              <a href="#youtube" >
+                <img src={youtube}></img>
+              </a>
+              <a href="#linkedin" >
+                <img src={linkedin}></img>
               </a>
               <a href="#Discord">
                 <img src={disc}></img>
