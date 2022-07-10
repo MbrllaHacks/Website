@@ -3,7 +3,8 @@
     font-weight: bold! important;
     color: #2883d7;
     padding-bottom: 0;
-    margin: 0px;
+    margin: 0em;
+    margin-bottom: 0.5em;
 }
 
 img.underline{
@@ -37,30 +38,6 @@ img.underline{
     display: block;
 }
 
-.expand-button{
-    display: inline-block;
-    font-size: larger;
-}
-
 #col1{
     margin-right: 5em;
-}
-
-.collapsible-group .expand-button{
-    font-weight: bold;
-    color: #000;
-    border: unset;
-    background-color: #fff;
-    width: 2em;
-}
-
-.collapsible-group .group-content{
-    /*height: 0em;*/
-    overflow: hidden;
-    transition: height ease-in 10s! important;
-}
-
-.expand-button:hover{
-    cursor: pointer;
-    color: #2883d7;
 }
