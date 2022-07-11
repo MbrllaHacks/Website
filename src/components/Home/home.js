@@ -1,54 +1,51 @@
-import "./home.css"
-import prin from "./../../Assets/prin.svg"
-import nick from "./../../Assets/nick.svg"
-import {Container, Row, Col, Particle} from "react-bootstrap"
+import "./home.css";
+import prin from "./../../Assets/prin.svg";
+import nick from "./../../Assets/nick.svg";
+import { Container, Row, Col, Particle } from "react-bootstrap";
 
+function Home() {
+  return (
+    <section>
+      <Container id="home">
+        <Container className="home-section">
+          <Row>
+            <Col lg={7}>
+              {/* Heading */}
 
-function Home(){
-    return (
-        <section>
-        <Container id="home">
-          <Container className="home-section">
-            <Row>
-                <Col lg={7} >
+              <div className="quote">
+                A virtual hackathon to turn ideas into
+                <span className="blackPart"> reality</span>
+              </div>
 
-                    {/* Heading */}
+              <div className="dates">OCT 08 - OCT 09</div>
 
-                    <div className="quote">
-                        A virtual hackathon to turn ideas into 
-                        <span className="blackPart"> reality</span>
-                    </div>
+              {/* Register Button */}
 
-                    <div className="dates">
-                        OCT 08 - OCT 09
-                    </div>
+              <div style={{ padding: 20 }}>
+                <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
+                  <button className="register">Get notified!</button>
+                </a>
+                <img src={prin} className="prin"></img>
+              </div>
+            </Col>
 
-                    {/* Register Button */}
-    
-                    <div style={{ padding: 20 }}>
-                        <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
-                        <button className="register">Get notified!</button>
-                        </a>
-                        <img src={prin} className="prin"></img>
-                    </div>
-                </Col>
+            {/* Nick image */}
 
-                    {/* Nick image */}
-
-                <Col lg={5}>
-                    <img src={nick} 
-                    alt="Nick holding a computer"
-                    className="img-fluid home-nick"
-                    ></img>
-                </Col>
-            </Row>
-
-          </Container>
+            <Col lg={5}>
+              <img
+                style={{
+                  background: 'url("./../../Assets/nick-lowres.png") no-repeat',
+                }}
+                src={nick}
+                alt="Nick holding a computer"
+                className="img-fluid home-nick"
+              ></img>
+            </Col>
+          </Row>
         </Container>
-      </section>
-    )
+      </Container>
+    </section>
+  );
 }
 
-export default Home
-
-
+export default Home;
