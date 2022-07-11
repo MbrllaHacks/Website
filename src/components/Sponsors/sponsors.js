@@ -31,7 +31,7 @@ function Sponsors(){
                     <a href="https://youtu.be/dQw4w9WgXcQ">
                     <button className="sponsorUs">Become a Sponsor</button>
                     </a>
-                    <img src={prin} className="sponsors-prin"></img>
+                    <img src={prin} className="sponsors-prin" alt="Prin"></img>
                 </div>
 
             </Col>

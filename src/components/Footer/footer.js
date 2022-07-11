@@ -1,11 +1,6 @@
-import logo from "./../../Assets/logo.svg";
-import a from "./../../Assets/a.svg";
-import disc from "./../../Assets/disc.svg";
-import twitter from "./../../Assets/twitter.svg";
-import insta from "./../../Assets/instagram.svg";
 import logo_white from "./../../Assets/logo_white.svg";
 import "./footer.css";
-import { Container, Row, Col, Particle } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function FooterComp() {
   return (
@@ -13,7 +8,7 @@ function FooterComp() {
       <Container>
         <Row className="upper-box">
           <Col lg={true} className="upper-box-col upper-box-col-left">
-            <img src={logo_white} alt="logo" className="upper-box-image" />
+            <img src={logo_white} alt="logo" className="upper-box-image"/>
           </Col>
 
           <Col lg={true} className="upper-box-col upper-box-col-right">
