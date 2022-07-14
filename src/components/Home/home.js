@@ -25,7 +25,7 @@ function Home(){
 
                     {/* Register Button */}
     
-                    <div style={{ padding: 20 }}>
+                    <div style={{ padding: 20 }} className= "register-comp">
                         <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
                         <button className="register">Get notified!</button>
                         </a>
