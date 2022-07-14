@@ -1,4 +1,3 @@
-import React from 'react'
 import './teams.css'
 import {Container} from "react-bootstrap"
 
@@ -6,7 +5,7 @@ function Teams() {
   return (
     <Container>
     <div className="main">
-        <div className="teamscss.top">
+        <div className="top">
             <b>Brought to you by</b>
         </div>
         <div className="middle">

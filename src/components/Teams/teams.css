@@ -18,7 +18,6 @@
 }
 
 .circles {
-  /* transparent border is added because otherwise all the circles were moving a bit for a second when hover was being used */
   border: 2px solid transparent;
   width: 6rem;
   height: 6rem;

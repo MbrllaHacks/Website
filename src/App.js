@@ -14,7 +14,7 @@ import Faq from './components/Faq/faq';
 function App() {
   return (
     <div>
-      <NavbarComp />
+       <NavbarComp /> 
       <Home />
       <About/>
       <Sponsors/>
