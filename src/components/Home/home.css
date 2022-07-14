@@ -14,22 +14,17 @@
 /* this blur is inside nicks image with computer */
 .home_blur{
   position: absolute;
-  right: 10px;
-  bottom: 300px;
-}
+  left: 83px;
+  bottom: 42px;
+  height: 100%;
 
-
-/* this blur is inside home section */
-.home_blur_3{
-  position: absolute;
-  top: 150px;
-  left: 0px;
 }
 
 .home_blur_2{
   position: absolute;
-  top: 150px;
-  right: 250px;
+  top: 22px;
+  left: -440px;
+  height: 100%;
 }
 
 .float_imgs_top{
@@ -118,6 +113,38 @@
   font-size: 85px;
   line-height: 80px;
   color: #2883d7;
+}
+
+@media (max-width: 1401px) {
+  .float_imgs_top{
+    position: absolute;
+    transform: rotate(-30deg);
+    width: 3rem;
+    height: 8rem;
+    right: 95px;
+  }
+  
+  .float_imgs_mid{
+    position: absolute;
+    right: -30px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .float_imgs_top{
+    position: absolute;
+    transform: rotate(-30deg);
+    width: 3rem;
+    height: 8rem;
+    right: -75px;
+  }
+  
+  .float_imgs_mid{
+    position: absolute;
+    right: -250px;
+    top: 265px;
+  }
 }
 
 @media (max-width: 766px) {

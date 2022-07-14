@@ -42,17 +42,12 @@ function Home(){
                 <Col lg={6} id='images'>
                     <img src={home_blur} 
                     alt="Blur behind nick holding a computer"
-                    className="img-fluid home_blur"
+                    className="home_blur"
                     ></img>
-
+                    
                     <img src={home_blur} 
                     alt="Blur behind nick holding a computer"
-                    className="img-fluid home_blur_3"
-                    ></img>
-
-                    <img src={home_blur} 
-                    alt="Blur behind nick holding a computer"
-                    className="img-fluid home_blur_2"
+                    className="home_blur_2 "
                     ></img>
 
                     <img src={nick} 

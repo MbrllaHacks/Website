@@ -8,11 +8,6 @@ import Sponsors from './components/Sponsors/sponsors';
 import Contact from "./components/Contact/contact";
 import FooterComp from './components/Footer/footer';
 import Faq from './components/Faq/faq';
-<<<<<<< HEAD
-import Contact from './components/Contact/contact';
-import Teams from './components/Teams/Teams'
-=======
->>>>>>> 211cdb60d762e199775c1a2649260009c9dfe54f
 
 
 

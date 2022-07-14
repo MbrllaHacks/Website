@@ -1,9 +1,94 @@
+#about_images{
+  position: relative;
+}
+
+.about-blur{
+  position: absolute;
+  top: -77px;
+  right: -154px;
+  z-index: -1;
+  /* left640 */
+}
+
+.about-bulb{
+  position: relative;
+  left: -70px;
+  top: 0px;
+}
+
+#about-binary{
+  position: relative;
+  left: -80px;
+  top: 0px;
+}
+
+#about-umbrella-2{
+  position: relative;
+  left: -80px;
+  top: 125px;
+  transform: rotate(25deg); 
+
+}
+
+#about-umbrella{
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.about-prin{
+  position: relative;
+  left: 70px;
+  bottom: -305px;
+}
+
+#about-prin-2{
+  position: relative;
+  left: 120px;
+  bottom: 150px;
+}
+
+#about-plus-1{
+  position: relative;
+  left: 275px;
+  bottom: -95px;
+  transform: rotate(25deg); 
+}
+
+#about-plus-2{
+  position: relative;
+  left: 230px;
+  bottom: -130px;
+  transform: rotate(25deg); 
+}
+
+#about-plus-3{
+  position: relative;
+  left: -110px;
+  bottom: -315px;
+  transform: rotate(25deg); 
+
+}
+
+#about-plus-4{
+  position: relative;
+  left: 80px;
+  bottom: 140px;
+  transform: rotate(25deg); 
+
+}
+
+.about-section-right{
+  margin-top: 15%;
+}
+
 .helloWorld {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
   color: #2883d7;
+  margin-top: 10%;
 }
 
 .about-nick {
@@ -22,6 +107,10 @@
   color: #000000;
 }
 
+.about-text-2{
+  margin-top: 5%;
+}
+
 .blue {
   color: #1477d3;
 }
@@ -29,6 +118,109 @@
 .about-logo {
   position: relative;
   right: 30px;
+}
+
+.logo_container::after{
+  height: 60px;
+  content: '';
+  display: block;
+  margin-top: 1px;
+  background: url('/src/Assets/highlight2.svg')no-repeat;
+  position: relative;
+  left: 175px;
+  top: -50px;
+  /* background-size:300px 150px; */
+}
+
+@media (max-width: 1400px) {
+  #about-plus-1{
+    position: relative;
+    left: 200px;
+    bottom: -95px;
+    transform: rotate(25deg); 
+  }
+
+  #about-plus-2{
+    position: relative;
+    left: 160px;
+    bottom: -140px;
+    transform: rotate(25deg); 
+  }
+
+  .about-nick {
+    position: relative;
+    right: 120px;
+  }
+
+  .about-prin{
+    position: relative;
+    left: -10px;
+    bottom: -305px;
+  }
+
+  #about-umbrella-2{
+    position: relative;
+    left: -170px;
+    top: 125px;
+    transform: rotate(25deg); 
+  
+  }
+
+  .about-blur{
+    position: absolute;
+    top: -77px;
+    right: -154px;
+    z-index: -1;
+    /* left640 */
+  }
+
+  .about-bulb{
+    position: relative;
+    left: -70px;
+    top: 0px;
+  }
+  
+  #about-binary{
+    position: relative;
+    left: -80px;
+    top: 0px;
+  }
+  
+  
+  
+  #about-umbrella{
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  
+  
+  
+  #about-prin-2{
+    position: relative;
+    left: 120px;
+    bottom: 150px;
+  }
+  
+  
+  
+  
+  
+  #about-plus-3{
+    position: relative;
+    left: -110px;
+    bottom: -315px;
+    transform: rotate(25deg); 
+  
+  }
+  
+  #about-plus-4{
+    position: relative;
+    left: 80px;
+    bottom: 140px;
+    transform: rotate(25deg); 
+  
+  }
 }
 
 @media (max-width: 1200px) {

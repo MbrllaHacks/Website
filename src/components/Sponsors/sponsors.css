@@ -1,3 +1,42 @@
+#sponsor_images{
+  position: relative;
+}
+
+.sponsor-blur{
+  position: absolute;
+  top: -140px;
+  left: -330px;
+  z-index: -1;
+}
+
+.sponsor-umbrella{
+  position: relative;
+  top: -185px;
+  left: 365px;
+}
+
+.sponsor-plus-1{
+  position: relative;
+  top: -130px;
+  left: 355px;
+  transform: rotate(25deg);
+}
+
+.sponsor-plus-2{
+  position: relative;
+  top: -85px;
+  left: 100px;
+  transform: rotate(15deg);
+
+}
+
+.sponsor-plus-3{
+  position: relative;
+  top: -45px;
+  left: 70px;
+}
+
+
 .sponsors-section {
   margin-top: 70px;
 }

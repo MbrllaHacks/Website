@@ -4,6 +4,7 @@ import "./questions.js";
 import ToggleableAnswer from "./questions.js";
 import fancyUnderline from "./../../Assets/fancyUnderline.png";
 import crossPattern from "./../../Assets/crossPattern.png";
+import umbrella from './../../Assets/umbrella_2.svg'
 
 function Faq(){
     return(
@@ -11,6 +12,9 @@ function Faq(){
             <Container className="faq-section" id="faq">
                 <Container className="faq-content">
                     <img src={crossPattern} className="pattern"></img>
+                    <img src={umbrella} className="faq-umbrella"></img>
+                    <img src={crossPattern} className="faq-pattern-2"></img>
+
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
 
                     <Row className="faq-body">
