@@ -5,9 +5,17 @@ import home_blur from './../../Assets/home_blur.svg'
 import plus from './../../Assets/plus.svg'
 import umbrella from './../../Assets/umbrella_2.svg'
 import {Container, Row, Col, Particle} from "react-bootstrap"
+import React, { useState, useEffect} from 'react'
+
 
 
 function Home(){
+    const [offsetY, setOffsetY] = useState(0)
+    const handleScroll = () => setOffsetY(window.pageYOffset)
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    })
     return (
         <section>
         <Container id="home">
@@ -43,6 +51,7 @@ function Home(){
                     <img src={home_blur} 
                     alt="Blur behind nick holding a computer"
                     className="home_blur"
+                    
                     ></img>
                     
                     <img src={home_blur} 
@@ -53,16 +62,21 @@ function Home(){
                     <img src={nick} 
                     alt="Nick holding a computer"
                     className="home-nick"
+
                     ></img>
 
                     <div className="float_imgs_top">
                         <img src={plus} 
                             alt="plus sign"
                             className="img-fluid plus"
+                            style={{transform: `translateY(-${offsetY}px)`}}
+
                         ></img>
                         <img src={umbrella} 
                             alt="umbrella"
                             className="img-fluid umbrella"
+                            style={{transform: `translateY(-${offsetY * 0.5}px)`}}
+
                         ></img>
                     </div>
 
@@ -70,6 +84,8 @@ function Home(){
                         <img src={plus} 
                             alt="plus sign"
                             className="img-fluid plus"
+                            style={{transform: `translateY(-${offsetY}px)`}}
+
                         ></img>
                     </div>
 
@@ -77,10 +93,14 @@ function Home(){
                         <img src={umbrella} 
                             alt="umbrella"
                             className="img-fluid umbrella"
+                            style={{transform: `translateY(-${offsetY}px )`}}
+
                         ></img>
                         <img src={plus} 
                             alt="plus sign"
                             className="img-fluid plus"
+                            style={{transform: `translateY(-${offsetY}px)`}}
+
                         ></img>
                     </div>
                 </Col>

@@ -1,4 +1,5 @@
 import "./sponsors.css"
+import { useEffect, useState } from "react"
 import hands from "./../../Assets/sponsor-hands.png"
 import sponsorBlur from "./../../Assets/sponsor-blur.png"
 import prin from "./../../Assets/prin.svg"
@@ -11,6 +12,16 @@ import {Container, Row, Col} from "react-bootstrap"
 
 
 function Sponsors(){
+  const [offsetY, setOffsetY] = useState(0)
+
+
+  const handleScroll = () => setOffsetY(window.pageYOffset)/.5
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+})
+
     return (
         <section>
         <Container id="sponsors">
@@ -45,10 +56,13 @@ function Sponsors(){
                     <img src={umbrella} 
                     alt="small umbrella"
                     className="sponsor-umbrella"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
                     ></img>
                     <img src={plus} 
                     alt="plus sign"
                     className="sponsor-plus-1"
+                    style={{transform: `translateY(-${offsetY * 0.3}px)` }}
+
                     ></img>
                     <img src={hands} 
                     alt="hands"
@@ -58,14 +72,20 @@ function Sponsors(){
                     <img src={plus} 
                     alt="plus sign"
                     className="sponsor-plus-2"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
                     ></img>
                     <img src={plus} 
                     alt="plus sign"
                     className="sponsor-plus-3"
+                    style={{transform: `translateY(-${offsetY * 0.3}px)` }}
+
                     ></img>
                     <img src={sponsor_blur} 
                     alt="blur behind sponsor"
                     className="sponsor-blur"
+                    style={{transform: `translateX(-${offsetY * 0.3}px)` }}
+
+
                     ></img>
             </Col>
 
