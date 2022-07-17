@@ -2,7 +2,6 @@ import "./faq.css";
 import { Container, Row, Col} from "react-bootstrap";
 import "./questions.js";
 import ToggleableAnswer from "./questions.js";
-import fancyUnderline from "./../../Assets/fancyUnderline.png";
 import crossPattern from "./../../Assets/crossPattern.png";
 
 function Faq(){
@@ -22,11 +21,11 @@ function Faq(){
         <section>
             <Container className="faq-section" id="faq">
                 <Container className="faq-content">
-                    <img src={crossPattern} className="pattern"></img>
+                    <img src={crossPattern} className="pattern" alt="Cross"></img>
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
 
                     <Row className="faq-body">
-                        <Col id="col1">
+                        <Col id="col1" lg={6}>
                             {Object.entries(qAndA_Left).map(([key, value]) => (
                                 <div>
                                     <div id="faq-question">
@@ -38,7 +37,7 @@ function Faq(){
                                 </div>
                             ))}
                         </Col>
-                        <Col id="col1">
+                        <Col id="col2" lg={6}>
                             {Object.entries(qAndA_Right).map(([key, value]) => (
                                 <div>
                                     <div id="faq-question">

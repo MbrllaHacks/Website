@@ -7,37 +7,42 @@
     margin-bottom: 0.5em;
 }
 
-img.underline{
-    width: 64.59vh;
-    z-index: -1;
-    position: relative;
-    bottom: 15.82vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    margin: 0px;
+.faq-section {
+  margin-top: 20px;
 }
 
-img.underline{
-    width: 64.59vh;
-    z-index: -1;
-    position: relative;
-    bottom: 15.82vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    margin: 0px;
-    rotate: 90deg;
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
-#faq-question{
-    font-weight: bold;
-    font-size: larger;
-    display: block;
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+  rotate: 90deg;
 }
 
 #col1{
-    margin-right: 5em;
+    /* margin-right: 5em; */
 }
+
+
+#faq-question {
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+  }

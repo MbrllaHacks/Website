@@ -1,6 +1,5 @@
 import "./sponsors.css"
 import hands from "./../../Assets/sponsor-hands.png"
-import sponsorBlur from "./../../Assets/sponsor-blur.png"
 import prin from "./../../Assets/prin.svg"
 
 import {Container, Row, Col} from "react-bootstrap"
@@ -32,7 +31,7 @@ function Sponsors(){
                     <a href="https://youtu.be/dQw4w9WgXcQ">
                     <button className="sponsorUs">Become a Sponsor</button>
                     </a>
-                    <img src={prin} className="sponsors-prin"></img>
+                    <img src={prin} className="sponsors-prin" alt="Prin"></img>
                 </div>
 
             </Col>

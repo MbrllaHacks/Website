@@ -6,13 +6,14 @@
     font-weight: bold;
     color: #000;
     border: unset;
-    background-color: #fff;
-    width: 2em;
 }
 
 .expand-button{
     display: inline-block;
     font-size: larger;
+    position: relative;
+    bottom: 28px;
+    right: 20px;
 }
 
 .expand-button:hover{
@@ -22,8 +23,8 @@
 
 .collapsible-group .group-content{
     max-height: 0;
-    transition-timing-function: linear;
-    transition: max-height 2s;
+    transition-timing-function: ease-in-out;
+    transition: max-height 0.7s 0.7s;
     overflow: hidden;
 }
 

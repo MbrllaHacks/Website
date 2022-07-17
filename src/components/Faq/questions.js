@@ -31,7 +31,7 @@ class ToggleableAnswer extends React.Component{
     render(){
         return(
             <Row className="collapsible-group">
-                <div className={this.state.isToggledOn ? "randomItem active" : "randomItem"}></div>
+                {/* <div className={this.state.isToggledOn ? "randomItem active" : "randomItem"}></div> */}
 
                 <div onClick={this.isClicked} className="expand-button">+</div>
                 
