@@ -26,7 +26,7 @@ function Home(){
                     {/* Register Button */}
     
                     <div style={{ padding: 20 }}>
-                        <a href="https://youtu.be/dQw4w9WgXcQ">
+                        <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
                         <button className="register">Get notified!</button>
                         </a>
                         <img src={prin} className="prin"></img>

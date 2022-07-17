@@ -4,6 +4,8 @@ import a from "./../../Assets/a.svg";
 import disc from "./../../Assets/disc.svg";
 import twitter from "./../../Assets/twitter.svg";
 import insta from "./../../Assets/instagram.svg";
+import linkedin from "./../../Assets/linkedin.svg";
+import youtube from "./../../Assets/youtube.svg";
 import "./navbar.css";
 
 function NavbarComp() {
@@ -40,8 +42,11 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#@" className="nel">
-              <img src={a} width="30px"></img>
+            <Nav.Link eventKey={2} href="#youtube" className="nel">
+              <img src={youtube} width="30px"></img>
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="#linkedin" className="nel">
+              <img src={linkedin} width="30px"></img>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#Discord" className="nel">
               <img src={disc} width="30px"></img>
