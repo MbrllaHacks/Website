@@ -15,7 +15,7 @@ function Sponsors(){
   const [offsetY, setOffsetY] = useState(0)
 
 
-  const handleScroll = () => setOffsetY(window.pageYOffset)/.5
+  const handleScroll = () => setOffsetY(window.pageYOffset-1800)
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -61,7 +61,7 @@ function Sponsors(){
                     <img src={plus} 
                     alt="plus sign"
                     className="sponsor-plus-1"
-                    style={{transform: `translateY(-${offsetY * 0.3}px)` }}
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
 
                     ></img>
                     <img src={hands} 
@@ -77,13 +77,13 @@ function Sponsors(){
                     <img src={plus} 
                     alt="plus sign"
                     className="sponsor-plus-3"
-                    style={{transform: `translateY(-${offsetY * 0.3}px)` }}
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
 
                     ></img>
                     <img src={sponsor_blur} 
                     alt="blur behind sponsor"
                     className="sponsor-blur"
-                    style={{transform: `translateX(-${offsetY * 0.3}px)` }}
+                    style={{transform: `translateX(-${offsetY * 0.15}px)` }}
 
 
                     ></img>

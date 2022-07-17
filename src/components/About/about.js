@@ -1,4 +1,6 @@
 import "./about.css"
+import { useEffect, useState } from "react"
+
 import nickumbrella from "./../../Assets/nickumbrella.svg"
 import lightbulb from './../../Assets/lightbulb.png'
 import umbrella from './../../Assets/umbrella_2.svg'
@@ -14,6 +16,16 @@ import {Container, Row, Col, Particle} from "react-bootstrap"
 
 
 function About(){
+    const [offsetY, setOffsetY] = useState(0)
+
+
+    const handleScroll = () => setOffsetY(window.pageYOffset-920)
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener("scroll", handleScroll)
+  })
+
     return (
         <section>
         <Container id="about">
@@ -27,16 +39,22 @@ function About(){
                     <img src={plus} 
                     alt="plus on nick"
                     id="about-plus-1"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                      <img src={plus} 
                     alt="plus on nick"
                     id="about-plus-2"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                     <img src={half_prin} 
                     alt="prin on nick"
                     className="about-prin"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                     <img src={nickumbrella} 
@@ -48,16 +66,22 @@ function About(){
                     <img src={umbrella} 
                     alt="small umbrella"
                     id="about-umbrella-2"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                     <img src={plus} 
                     alt="plus on nick"
                     id="about-plus-3"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                      <img src={plus} 
                     alt="plus on nick"
                     id="about-plus-4"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                     <img src={binary} 
@@ -74,6 +98,8 @@ function About(){
                     <img src={half_prin_2} 
                     alt="half_prin_2"
                     id="about-prin-2"
+                    style={{transform: `translateY(-${offsetY * 0.2}px)` }}
+
                     ></img>
 
                     <img src={about_blur} 

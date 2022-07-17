@@ -5,15 +5,26 @@ import ToggleableAnswer from "./questions.js";
 import fancyUnderline from "./../../Assets/fancyUnderline.png";
 import crossPattern from "./../../Assets/crossPattern.png";
 import umbrella from './../../Assets/umbrella_2.svg'
+import React, { useState, useEffect} from 'react'
+
 
 function Faq(){
+    const [offsetY, setOffsetY] = useState(0)
+    const handleScroll = () => setOffsetY(window.pageYOffset-2500)
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    },[])
     return(
         <section>
             <Container className="faq-section" id="faq">
                 <Container className="faq-content">
-                    <img src={crossPattern} className="pattern"></img>
-                    <img src={umbrella} className="faq-umbrella"></img>
-                    <img src={crossPattern} className="faq-pattern-2"></img>
+                    <div className="faq-images">
+                    <img src={crossPattern} className="pattern" style={{transform: `translateY(${offsetY*.15}px)`}}></img>
+                    <img src={umbrella} className="faq-umbrella" style={{transform: `translateY(${offsetY*.15}px)`}}></img>
+                    <img src={crossPattern} className="faq-pattern-2" style={{transform: `translateY(${offsetY*.15}px)`}}></img>
+                    </div>
+                   
 
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
 
