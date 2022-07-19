@@ -6,6 +6,11 @@ import insta from "./../../Assets/instagram.svg";
 import linkedin from "./../../Assets/linkedin.svg";
 import youtube from "./../../Assets/youtube.svg";
 import "./navbar.css";
+import { FaInstagram,
+         FaLinkedinIn,
+         FaDiscord,
+         FaYoutube,
+         FaTwitter } from "react-icons/fa";
 
 function NavbarComp() {
   return (
@@ -42,21 +47,21 @@ function NavbarComp() {
               FAQ
             </Nav.Link>
             <Nav.Link eventKey={2} href="#youtube" className="nel">
-              <img src={youtube} width="30px" alt="Youtube"></img>
+              <FaYoutube size={25} color='black' />
             </Nav.Link>
             <Nav.Link eventKey={2} href="#linkedin" className="nel">
-              <img src={linkedin} width="30px" alt="Linkedin"></img>
+              <FaLinkedinIn size={25} color='black' />
             </Nav.Link>
             <Nav.Link eventKey={2} href="#Discord" className="nel">
-              <img src={disc} width="30px" alt="Discord"></img>
+              <FaDiscord size={25} color='black'  />
             </Nav.Link>
             {/* Add Discord Link here */}
             <Nav.Link eventKey={2} href="#Twitter" className="nel">
-              <img src={twitter} width="30px" alt="Twitter"></img>
+              <FaTwitter size={25} color='black' />
             </Nav.Link>
             {/* Add Twitter Link here */}
             <Nav.Link eventKey={2} href="#Instagram" className="nel">
-              <img src={insta} width="30px" alt="Instagram"></img>
+              <FaInstagram size={25} color='black' />
             </Nav.Link>
             {/* Add Insta link here   */}
           </Nav>
