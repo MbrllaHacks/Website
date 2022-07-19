@@ -1,3 +1,35 @@
+.cir-container {
+  overflow: hidden;
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-60rem, 0, 0); /* Adjust this image width */
+  }
+}
+
+.circle {
+  animation: slide 7s linear infinite; /* Adjust the time here */
+}
+
+.teams-title {
+  color: #2883d7;
+  font-size: 30px;
+}
+
+.teams-subtitle {
+  color: rgba(0, 0, 0, 0.59);
+  font-size: 34px;
+}
+
+/* 
+
 .top {
   margin-top: 2rem;
   color: #2883d7;
@@ -57,29 +89,4 @@
     left: 1rem;
   }
 }
-
-.circles:hover::before {
-  content: "";
-  position: absolute;
-  right: -30px;
-  width: 9rem;
-  height: 100%;
-  top: -50px;
-  z-index: 1;
-  background: url("../../../src/Assets/shitty_vector_1.svg") no-repeat;
-}
-
-.circles:hover {
-  border: 2px solid #2883d7;
-}
-
-.circles:hover::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 100%;
-  bottom: -4.5rem;
-  right: 50%;
-  z-index: -1;
-  background: url("../../../src/Assets/shitty_vector_2.png") no-repeat;
-}
+ */

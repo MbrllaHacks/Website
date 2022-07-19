@@ -1,25 +1,27 @@
 import './teams.css'
 import {Container} from "react-bootstrap"
+import Circle from './circle.js'
 
 function Teams() {
   return (
     <Container>
-    <div className="main">
-        <div className="top">
+    <div >
+        <div className='teams-title'>
             <b>Brought to you by</b>
         </div>
-        <div className="middle">
+        <div className='teams-subtitle'>
             Wilson,Lead Organizer
         </div>
-        <div className="bottom">
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
+        <div className='cir-container'>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+            <div className='circle'><Circle/></div>
+
         </div>
     </div>
     </Container>
