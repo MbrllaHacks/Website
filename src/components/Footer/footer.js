@@ -5,6 +5,7 @@ import PrivacyPolicy from "./PopUps/pp";
 import CodeOfConduct from "./PopUps/cc";
 import React from "react";
 
+
 function FooterComp() {
   const [PPShow, setPPShow] = React.useState(false);
   const [CCShow, setCCShow] = React.useState(false);

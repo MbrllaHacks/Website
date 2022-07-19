@@ -54,7 +54,8 @@
 }
 
 .contact-img {
-  width: 100%;
+  max-width: 300px;
+  filter: drop-shadow(100px 5px 100px #2883d7);
 }
 
 .socials > * {

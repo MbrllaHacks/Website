@@ -48,6 +48,10 @@
   color: #000000;
 }
 
+.sponsors-img {
+  filter: drop-shadow(100px 5px 100px #2883d7);
+}
+
 @media (min-width: 990px) and (max-width: 1200px) {
   .sponsors-prin {
     position: relative;

@@ -28,6 +28,11 @@
   padding-right: 10px;
 }
 
+.home-nick {
+  max-width: 450px !important;
+  filter: drop-shadow(100px 5px 100px #2883d7);
+}
+
 .prin {
   width: 240px;
   transform: rotate(-126.32deg);
