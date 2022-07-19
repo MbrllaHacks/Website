@@ -2,7 +2,7 @@ import './teams.css'
 import {Container} from "react-bootstrap"
 import Circle from './circle.js'
 
-function Teams() {
+function TeamsComp() {
   return (
     <Container>
     <div >
@@ -29,4 +29,4 @@ function Teams() {
   )
 }
 
-export default Teams
+export default TeamsComp
