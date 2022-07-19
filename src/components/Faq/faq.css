@@ -1,10 +1,10 @@
-#faq-title {
-  font-size: 4em;
-  font-weight: bold !important;
-  color: #2883d7;
-  padding-bottom: 0;
-  margin: 0px;
-  margin-bottom: 40px;
+#faq-title{
+    font-size: 4em;
+    font-weight: bold! important;
+    color: #2883d7;
+    padding-bottom: 0;
+    margin: 0em;
+    margin-bottom: 0.5em;
 }
 
 .faq-section {
@@ -36,36 +36,13 @@ img.underline {
   rotate: 90deg;
 }
 
+#col1{
+    /* margin-right: 5em; */
+}
+
+
 #faq-question {
-  font-weight: bold;
-  font-size: larger;
-  display: block;
-}
-
-.expand-button {
-  display: inline-block;
-  font-size: larger;
-}
-
-#col1 {
-  margin-right: 5em;
-}
-
-.collapsible-group .expand-button {
-  font-weight: bold;
-  color: #000;
-  border: unset;
-  background-color: #fff;
-  width: 2em;
-}
-
-.collapsible-group .group-content {
-  /*height: 0em;*/
-  overflow: hidden;
-  transition: height ease-in 10s !important;
-}
-
-.expand-button:hover {
-  cursor: pointer;
-  color: #2883d7;
-}
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+  }
