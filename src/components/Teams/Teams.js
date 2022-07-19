@@ -10,7 +10,7 @@ function Teams() {
             <b>Brought to you by</b>
         </div>
         <div className='teams-subtitle'>
-            Wilson,Lead Organizer
+            Wilson, Lead Organizer
         </div>
         <div className='cir-container'>
             <div className='circle'><Circle/></div>

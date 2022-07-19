@@ -1,10 +1,14 @@
-#faq-title{
-    font-size: 4em;
-    font-weight: bold! important;
-    color: #2883d7;
-    padding-bottom: 0;
-    margin: 0em;
-    margin-bottom: 0.5em;
+#faq-title {
+  font-size: 4em;
+  font-weight: bold !important;
+  color: #2883d7;
+  padding-bottom: 0;
+  margin: 0em;
+  margin-bottom: 0.5em;
+}
+
+.faq-body {
+  margin: auto !important;
 }
 
 .faq-section {
@@ -36,13 +40,17 @@ img.underline {
   rotate: 90deg;
 }
 
-#col1{
-    /* margin-right: 5em; */
+#faq-question {
+  font-weight: 400 !important;
+  font-size: 27px;
 }
 
+.col1,
+.col2 {
+  margin-left: 30px;
+}
 
-#faq-question {
-    font-weight: bold;
-    font-size: larger;
-    display: block;
-  }
+/* 
+.faq-answer {
+  font-size: 2px ; This styling is available in questions.js
+} */

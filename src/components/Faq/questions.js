@@ -35,7 +35,7 @@ class ToggleableAnswer extends React.Component{
 
                 <div onClick={this.isClicked} className="expand-button">+</div>
                 
-                <p className={this.state.isToggledOn ? "group-content active":"group-content"}>
+                <p className={this.state.isToggledOn ? "group-content active":"group-content"} style={{fontSize: 22}}>
                     {this.props.children}
                 </p>
                 

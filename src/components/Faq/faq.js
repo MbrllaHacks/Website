@@ -24,10 +24,10 @@ function Faq(){
                     <img src={crossPattern} className="pattern" alt="Cross"></img>
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
 
-                    <Row className="faq-body">
-                        <Col id="col1" lg={6}>
+                    <Row >
+                        <Col id="col1" lg={6} >
                             {Object.entries(qAndA_Left).map(([key, value]) => (
-                                <div>
+                                <div className="col1">
                                     <div id="faq-question">
                                         {key}
                                     </div>
@@ -37,9 +37,9 @@ function Faq(){
                                 </div>
                             ))}
                         </Col>
-                        <Col id="col2" lg={6}>
+                        <Col id="col2" lg={6} >
                             {Object.entries(qAndA_Right).map(([key, value]) => (
-                                <div>
+                                <div className="col2">
                                     <div id="faq-question">
                                         {key}
                                     </div>
