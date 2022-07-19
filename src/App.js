@@ -21,7 +21,7 @@ function App() {
       <Sponsors/>
       <Faq/>
       <Contact />
-      <Teams />
+      {/* <Teams /> */}
       <FooterComp />
     </div>
   );
