@@ -29,7 +29,9 @@
 
 .about-logo {
   position: relative;
-  right: 30px;
+  right: 20px;
+  bottom: 20px;
+  width: 511px;
 }
 
 @media (max-width: 1200px) {

@@ -1,8 +1,6 @@
 import "./about.css"
 import nickumbrella from "./../../Assets/nickumbrella.svg"
 import logo from "./../../Assets/logo.svg"
-
-
 import {Container, Row, Col } from "react-bootstrap"
 
 

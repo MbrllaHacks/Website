@@ -1,10 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./../../Assets/logo.svg";
-import disc from "./../../Assets/disc.svg";
-import twitter from "./../../Assets/twitter.svg";
-import insta from "./../../Assets/instagram.svg";
-import linkedin from "./../../Assets/linkedin.svg";
-import youtube from "./../../Assets/youtube.svg";
 import "./navbar.css";
 import { FaInstagram,
          FaLinkedinIn,

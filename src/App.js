@@ -8,15 +8,15 @@ import Sponsors from './components/Sponsors/sponsors';
 import Contact from "./components/Contact/contact";
 import FooterComp from './components/Footer/footer';
 import Faq from './components/Faq/faq';
-import TeamsComp from './components/Teams/Teams';
+import TeamsComp from './components/Teams/teams.js';
 
 
 
 
 function App() {
   return (
-    <div>
-       <NavbarComp /> 
+    <div className='main-site'>
+      <NavbarComp /> 
       <Home />
       <About/>
       <Sponsors/>
