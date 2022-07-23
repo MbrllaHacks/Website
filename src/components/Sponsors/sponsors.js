@@ -1,6 +1,5 @@
-import "./sponsors.css"
+import '../../style.css';
 import hands from "./../../Assets/sponsor-hands.png"
-import sponsorBlur from "./../../Assets/sponsor-blur.png"
 import prin from "./../../Assets/prin.svg"
 
 import {Container, Row, Col} from "react-bootstrap"
@@ -17,7 +16,7 @@ function Sponsors(){
 
                 {/* Text */}
 
-                <div className="sponsors-heading">
+                <div className="sponsors-heading ">
                     Sponsors
                 </div>
 
@@ -28,11 +27,11 @@ function Sponsors(){
                 Interested in becoming a sponsor?
                 </p>
 
-                <div className="sponsor-button">
-                    <a href="https://youtu.be/dQw4w9WgXcQ">
+                <div className="sponsor-button ">
+                    <a href="mailto:sponsors@mbrllahacks.ca">
                     <button className="sponsorUs">Become a Sponsor</button>
                     </a>
-                    <img src={prin} className="sponsors-prin"></img>
+                    <img src={prin} className="sponsors-prin" alt="Prin"></img>
                 </div>
 
             </Col>
