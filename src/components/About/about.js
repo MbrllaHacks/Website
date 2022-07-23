@@ -1,5 +1,5 @@
 import '../../style.css';
-import nickumbrella from "./../../Assets/nickumbrella.svg"
+import nickumbrella from "./../../Assets/nickumbrella.png"
 import logo from "./../../Assets/logo.svg"
 import {Container, Row, Col } from "react-bootstrap"
 import React, { useState, useEffect } from 'react'
@@ -20,7 +20,7 @@ function About(){
                     <img src={nickumbrella} 
                     alt="Nick with an umbrella"
                     className="img-fluid about-nick fadeInBottom"
-                    style={{ maxHeight: "550px" }}
+                    style={{ maxHeight: "750px" }}
 
                     ></img>
                 </Col>

@@ -1,10 +1,10 @@
-import loadingScreen from "./Assets/loading.gif"
 import './style.css';
+import loadingScreen from "./Assets/loading.gif"
 
 
 function Loading() {
     return (
-        <div className="loading-screen">
+        <div style={{ backgroundColor: "black", minHeight: "100%", width: "100%", margin: "0"}} className="loading-screen">
             <img src={loadingScreen} class="loading-gif"/>
         </div>  
     );

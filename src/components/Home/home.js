@@ -1,8 +1,7 @@
 import '../../style.css';
 import prin from "./../../Assets/prin.svg"
-import nick from "./../../Assets/nick.svg"
+import nick from "./../../Assets/nick.png"
 import {Container, Row, Col } from "react-bootstrap"
-import smallUmbrella from "./../../Assets/sm-umb.svg"
 import React, { useState, useEffect} from 'react'
 
 
@@ -42,6 +41,7 @@ function Home(){
                         <img src={nick} 
                         alt="Nick holding a computer"
                         className="img-fluid home-nick fadeInBottom"
+                        style={{ maxHeight: "450px" }}
                         ></img>
 
                     </>
