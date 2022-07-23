@@ -19,12 +19,6 @@
 
 /* ----------------------------------------------- App.js/Loading --------------------------------------------------- */
 
-loading-screen {
-  position: relative;
-  top: 50%;
-  bottom: 50%;
-}
-
 /* -----------------------------------------------  Nav Bar -----------------------------------------------  */
 
 * {
@@ -114,9 +108,8 @@ loading-screen {
 }
 
 .home-nick {
-  max-width: 450px !important;
   filter: drop-shadow(100px 5px 100px #2883d7);
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .prin {
@@ -138,6 +131,13 @@ loading-screen {
   font-size: 85px;
   line-height: 80px;
   color: #2883d7;
+}
+
+@media (max-width: 991px) {
+  .home-nick {
+    position: absolute;
+    display: none;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 766px) {
@@ -183,7 +183,7 @@ loading-screen {
 
 .about-nick {
   position: relative;
-  right: 40px;
+  bottom: 60px;
   filter: drop-shadow(100px 5px 100px #2883d7);
 }
 
@@ -280,6 +280,10 @@ loading-screen {
   line-height: 40px;
 
   color: #000000;
+}
+
+.sponsors-img {
+  filter: drop-shadow(100px 5px 100px #2883d7);
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
