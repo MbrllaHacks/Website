@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./../../Assets/logo.svg";
-import "./navbar.css";
+import '../../style.css';
 import { FaInstagram,
          FaLinkedinIn,
          FaDiscord,

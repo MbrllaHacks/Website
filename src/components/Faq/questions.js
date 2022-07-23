@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col} from "react-bootstrap";
-import './questions.css';
+import { Row } from "react-bootstrap";
+import '../../style.css';
 
 class ToggleableAnswer extends React.Component{
     constructor(props){

@@ -1,0 +1,862 @@
+/* ----------------------------------------------- App.js --------------------------------------------------- */
+
+.main-site {
+  overflow: hidden;
+  animation: BlackInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes BlackInAnimation {
+  0% {
+    opacity: 0;
+    background-color: #000000;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------- App.js/Loading --------------------------------------------------- */
+
+loading-screen {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+}
+
+/* -----------------------------------------------  Nav Bar -----------------------------------------------  */
+
+* {
+  font-family: "Space Grotesk";
+}
+
+.typo {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.nel {
+  margin: 5px;
+}
+
+.navele {
+  position: relative;
+  top: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand {
+    width: 180px;
+  }
+}
+
+/* ----------------------------------------------- Home Page -----------------------------------------------  */
+
+.register {
+  width: 215px;
+  height: 68px;
+  border-radius: 28px;
+  background: #2883d7;
+  box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
+  border: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.register:hover {
+  background: #0385ff;
+}
+
+.blackPart {
+  color: black;
+}
+
+.sm-umb {
+  max-width: 35px;
+  transform: rotate(40deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.fadeInBottom {
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.dates {
+  font-family: "Fira Code";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.home-nick {
+  max-width: 450px !important;
+  filter: drop-shadow(100px 5px 100px #2883d7);
+  margin-bottom: 100px;
+}
+
+.prin {
+  width: 240px;
+  transform: rotate(-126.32deg);
+  z-index: -1;
+  position: relative;
+  right: 140px;
+}
+
+.home-section {
+  margin-top: 90px;
+}
+
+.quote {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 80px;
+  color: #2883d7;
+}
+
+@media (min-width: 575px) and (max-width: 766px) {
+  .prin {
+    position: relative;
+    bottom: 150px;
+    left: 70px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 575px) {
+  .prin {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 541px) {
+  .prin {
+    position: relative;
+    bottom: 150px;
+    left: 70px;
+  }
+  .quote {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16vw;
+    line-height: 80px;
+    color: #2883d7;
+  }
+}
+
+/* ----------------------------------------------- About Page -----------------------------------------------  */
+
+.helloWorld {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  color: #2883d7;
+}
+
+.about-nick {
+  position: relative;
+  right: 40px;
+  filter: drop-shadow(100px 5px 100px #2883d7);
+}
+
+.about-text {
+  width: 700px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 40px;
+
+  color: #000000;
+}
+
+.blue {
+  color: #1477d3;
+}
+
+.about-logo {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  width: 511px;
+}
+
+@media (max-width: 1200px) {
+  .about-text {
+    width: 600px;
+  }
+}
+
+@media (max-width: 986px) {
+  .about-text {
+    width: 700px;
+  }
+  .about-logo {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-text {
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------------  Sponsors Page -----------------------------------------------  */
+
+.sponsors-section {
+  margin-top: 70px;
+}
+
+.sponsors-heading {
+  width: 298px;
+  height: 86px;
+  font-family: "Anek Latin", sans-serif;
+  font-style: normal;
+  font-size: 68px;
+  line-height: 90px;
+
+  color: #2883d7;
+}
+
+.sponsorUs {
+  width: 298px;
+  height: 78px;
+  border-radius: 30px;
+  background: #2883d7;
+  box-shadow: 1px 3px 10px 1px rgba(40, 131, 215, 0.4);
+  border: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  color: #ffffff;
+  margin: 30px;
+}
+
+.sponsors-prin {
+  width: 250px;
+  transform: rotate(-126.32deg);
+  z-index: -1;
+  position: relative;
+  right: 170px;
+}
+
+.sponsors-text {
+  width: 600px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 40px;
+
+  color: #000000;
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .sponsors-prin {
+    position: relative;
+    bottom: 190px;
+    left: 180px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .sponsors-prin {
+    position: relative;
+    left: -170px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sponsors-prin {
+    position: relative;
+    left: 120px;
+    bottom: 190px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sponsors-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sponsorUs {
+    width: 220px;
+    height: 70px;
+    font-size: 19px;
+  }
+  .sponsors-prin {
+    position: absolute;
+    display: none;
+  }
+}
+
+/* -----------------------------------------------  FAQ Page -----------------------------------------------   */
+
+#faq-title {
+  font-size: 4em;
+  font-weight: bold !important;
+  color: #2883d7;
+  padding-bottom: 0;
+  margin: 0em;
+  margin-bottom: 0.5em;
+}
+
+.faq-body {
+  margin: auto !important;
+}
+
+.faq-section {
+  margin-top: 20px;
+}
+
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+img.underline {
+  width: 64.59vh;
+  z-index: -1;
+  position: relative;
+  bottom: 15.82vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+  rotate: 90deg;
+}
+
+#faq-question {
+  font-weight: 400 !important;
+  font-size: 27px;
+}
+
+.col1,
+.col2 {
+  margin-left: 30px;
+}
+
+/* 
+  .faq-answer {
+    font-size: 2px ; This styling is available in questions.js
+  } */
+
+/*  ----------------------------------------------- FAQ/Question  -----------------------------------------------   */
+
+.collapsible-group {
+  display: flex;
+}
+
+.collapsible-group .expand-button {
+  font-weight: bold;
+  color: #000;
+  border: unset;
+}
+
+.expand-button {
+  display: inline-block;
+  font-size: larger;
+  position: relative;
+  bottom: 36px;
+  right: 20px;
+}
+
+.expand-button:hover {
+  cursor: pointer;
+  color: #2883d7;
+}
+
+.collapsible-group .group-content {
+  max-height: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.7s;
+  overflow: hidden;
+}
+
+.collapsible-group .group-content.active {
+  max-height: 100em;
+}
+
+/*.randomItem{
+      height: 100px;
+      width: 200px;
+      background-color: #000;
+      transition-timing-function: linear;
+      transition: height 3s;
+  }
+  
+  .randomItem.active{
+      height: 200px;
+  }*/
+
+/* -----------------------------------------------  Contact Page -----------------------------------------------   */
+
+.button-send {
+  width: 105px;
+  height: 40;
+  border-radius: 10px;
+  background: #2883d7;
+  border: none;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.contact-header {
+  font-size: 60px;
+  color: #2883d7;
+  font-weight: 600;
+}
+
+.contact-section {
+  margin-top: 50px;
+}
+
+.contact-body {
+  font-size: 1.5rem;
+}
+
+.sign-up {
+  width: 500px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.sign-up-box {
+  padding: 20px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+
+  background: #303131;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+
+.contact-prin {
+  position: relative;
+  left: 270px;
+  bottom: 80px;
+  z-index: -1;
+  transform: rotate(-126.32deg);
+}
+
+.contact-img {
+  max-width: 300px;
+  filter: drop-shadow(100px 5px 100px #2883d7);
+}
+
+.socials > * {
+  margin: 10px;
+}
+
+.sign-up-box {
+  padding: 20px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+
+  background: #303131;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+
+@media (max-width: 510px) {
+  .sign-up {
+    width: 300px;
+  }
+
+  .sign-up > * {
+    font-size: 15px !important;
+  }
+
+  .button-send {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    background: #2883d7;
+    border: none;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+  }
+}
+
+/* ----------------------------------------------- Teams Page -----------------------------------------------  */
+
+.cir-container {
+  overflow: hidden;
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-60rem, 0, 0); /* Adjust this image width */
+  }
+}
+
+.circle {
+  animation: slide 7s linear infinite; /* Adjust the time here */
+}
+
+.teams-title {
+  color: #2883d7;
+  font-size: 30px;
+}
+
+.teams-subtitle {
+  color: rgba(0, 0, 0, 0.59);
+  font-size: 34px;
+}
+
+/* 
+  
+  .top {
+    margin-top: 2rem;
+    color: #2883d7;
+    font-size: 20px;
+  }
+  
+  .middle {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.59);
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    justify-content: space-around;
+  }
+  
+  .circles {
+    border: 2px solid transparent;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    background-color: #d9d9d9;
+    position: relative;
+  }
+  
+  @media (max-width: 1004px) {
+    .circles {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .main {
+      width: 100vh;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .main {
+      position: relative;
+      left: 3rem;
+    }
+  }
+  
+  @media (max-width: 775px) {
+    .circles {
+      width: 4rem;
+      height: 4rem;
+    }
+    .main {
+      position: absolute;
+      left: 1rem;
+    }
+  }
+   */
+
+/*  ----------------------------------------------- Circle/Teams Page -----------------------------------------------  */
+
+.umbrella {
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.panel {
+  position: absolute;
+  background-color: #333;
+  width: 5px;
+  height: 180px;
+  top: -25px;
+  left: 60px;
+  z-index: 3;
+}
+
+.img {
+  position: relative;
+  height: 130px;
+  width: 130px;
+  background-color: #bbb;
+  border-radius: 50%;
+  z-index: 13;
+}
+
+.panel::after {
+  transform: scaleX(0.2) scaleY(1.5);
+}
+
+/* .panel:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -97px;
+    width: 200px;
+    height: 350px;
+    background-color: #161a1d;
+    opacity: 0.1;
+    transition: 0.2s ease;
+  } */
+
+.panel::after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  border-radius: 100px 100px 0 0;
+  background-color: #346492;
+  box-shadow: inset 0 -10px #333, inset 50px -10px #2883d7,
+    inset -50px -10px #2883d7;
+  top: -75px;
+  left: -97px;
+  transition: 0.2s ease;
+  transform-origin: top;
+}
+
+input#panel {
+  display: none;
+}
+
+#pfp:hover ~ .panel::after {
+  transform: scaleX(1) scaleY(1);
+}
+
+/* #panel:checked + .panel:before {
+    transform: scaleX(0.000001);
+    opacity: 0;
+  } */
+
+.stick {
+  position: absolute;
+  background-color: #333;
+  width: 5px;
+  height: 20px;
+  border-radius: 20px 20px 0 0;
+  top: -120px;
+  left: 60px;
+  z-index: 5;
+}
+
+.stick::before {
+  content: "";
+  position: absolute;
+  border-right: 7px solid #b1a7a6;
+  border-bottom: 7px solid #b1a7a6;
+  border-left: 7px solid transparent;
+  border-top: 7px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 255px;
+  left: -1px;
+  transform: rotate(45deg);
+}
+
+.stick::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 15px;
+  background-color: #b1a7a6;
+  top: 255px;
+  left: -1px;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+.panel,
+.stick {
+  transition-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  transform: scale(0);
+}
+
+#pfp:hover ~ .panel {
+  transform: scaleX(1) scaleY(1);
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+#pfp:hover ~ .stick {
+  transform: scaleX(1) scaleY(1);
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+#pfp:hover {
+  border: 4px solid #2883d7;
+}
+
+/* -----------------------------------------------  Footer Page -----------------------------------------------   */
+
+.footer {
+  background-color: #000000;
+}
+
+span button {
+  text-decoration: none;
+  border: none;
+  padding: 0 !important;
+  background-color: #000000;
+  color: white;
+}
+
+.upper-box-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 45px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+@media (max-width: 986px) {
+  .upper-box-text {
+    font-size: 19px;
+    margin-left: 0px;
+  }
+  .upper-box-col-right {
+    text-align: center !important;
+  }
+  .upper-box-col {
+    padding: 10px !important;
+  }
+  .lower-text-box {
+    text-align: center !important;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-logo {
+    position: relative;
+    top: 5px;
+  }
+}
+.upper-box-col {
+  padding: 30px;
+}
+.upper-box-col-right {
+  text-align: right;
+}
+
+.lower-box {
+  padding-bottom: 20px;
+}
+.lower-box-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.lower-box-text-underlined {
+  color: #2883d7;
+  text-decoration: underline;
+}
+
+.lower-text-box {
+  text-align: center;
+}
+
+.footer-logo {
+  position: relative;
+  bottom: 15px;
+  width: 285px;
+}

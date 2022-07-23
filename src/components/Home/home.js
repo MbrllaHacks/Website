@@ -1,7 +1,9 @@
-import "./home.css"
+import '../../style.css';
 import prin from "./../../Assets/prin.svg"
 import nick from "./../../Assets/nick.svg"
 import {Container, Row, Col } from "react-bootstrap"
+import smallUmbrella from "./../../Assets/sm-umb.svg"
+import React, { useState, useEffect} from 'react'
 
 
 function Home(){
@@ -14,18 +16,18 @@ function Home(){
 
                     {/* Heading */}
 
-                    <div className="quote">
+                    <div className="quote fadeInBottom">
                         A virtual hackathon to turn ideas into 
                         <span className="blackPart"> reality</span>
                     </div>
 
-                    <div className="dates">
+                    <div className="dates fadeInBottom">
                         OCT 08 - OCT 09
                     </div>
 
                     {/* Register Button */}
     
-                    <div style={{ padding: 20 }} className= "register-comp">
+                    <div style={{ padding: 20 }} className= "register-comp fadeInBottom">
                         <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
                         <button className="register">Get notified!</button>
                         </a>
@@ -36,10 +38,13 @@ function Home(){
                     {/* Nick image */}
 
                 <Col lg={5}>
-                    <img src={nick} 
-                    alt="Nick holding a computer"
-                    className="img-fluid home-nick"
-                    ></img>
+                    <>
+                        <img src={nick} 
+                        alt="Nick holding a computer"
+                        className="img-fluid home-nick fadeInBottom"
+                        ></img>
+
+                    </>
                 </Col>
             </Row>
 

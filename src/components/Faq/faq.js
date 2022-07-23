@@ -1,4 +1,4 @@
-import "./faq.css";
+import '../../style.css';
 import { Container, Row, Col} from "react-bootstrap";
 import "./questions.js";
 import ToggleableAnswer from "./questions.js";
