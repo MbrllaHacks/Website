@@ -28,7 +28,7 @@ function Sponsors(){
                 </p>
 
                 <div className="sponsor-button ">
-                    <a href="https://youtu.be/dQw4w9WgXcQ">
+                    <a href="mailto:sponsors@mbrllahacks.ca">
                     <button className="sponsorUs">Become a Sponsor</button>
                     </a>
                     <img src={prin} className="sponsors-prin" alt="Prin"></img>
