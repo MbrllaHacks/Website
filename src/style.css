@@ -697,8 +697,17 @@ input#panel {
   display: none;
 }
 
+.org-name {
+  padding: 2px;
+}
+
 #pfp:hover ~ .panel::after {
   transform: scaleX(1) scaleY(1);
+}
+
+#pfp:hover ~ .org-name {
+  display: none;
+  position: absolute;
 }
 
 /* #panel:checked + .panel:before {
