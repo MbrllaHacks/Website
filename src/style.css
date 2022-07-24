@@ -18,6 +18,17 @@
 }
 
 /* ----------------------------------------------- App.js/Loading --------------------------------------------------- */
+.loading-screen{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.loading-gif{
+  width: 100%;
+}
 
 /* -----------------------------------------------  Nav Bar -----------------------------------------------  */
 
@@ -372,9 +383,13 @@ img.underline {
   rotate: 90deg;
 }
 
-#faq-question {
+.faq-question {
   font-weight: 400 !important;
   font-size: 27px;
+}
+
+#main{
+  margin-left: 30px;
 }
 
 .col1,
