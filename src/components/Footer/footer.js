@@ -1,5 +1,5 @@
 import logo_white from "./../../Assets/logo_white.svg";
-import "./footer.css";
+import '../../style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import PrivacyPolicy from "./PopUps/pp";
 import CodeOfConduct from "./PopUps/cc";

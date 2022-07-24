@@ -1,10 +1,6 @@
-import disc from "./../../Assets/disc.svg";
-import twitter from "./../../Assets/twitter.svg";
-import insta from "./../../Assets/instagram.svg";
 import pc2 from "./../../Assets/pc2.svg";
-import linkedin from "./../../Assets/linkedin.svg";
-import youtube from "./../../Assets/youtube.svg";
-import "./contact.css";
+import '../../style.css';
+
 import { Container, Row, Col } from "react-bootstrap";
 import {FaInstagram,
         FaLinkedinIn,

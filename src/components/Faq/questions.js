@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, Row, Col} from "react-bootstrap";
-import './questions.css';
+import { Row } from "react-bootstrap";
+import '../../style.css';
 
 class ToggleableAnswer extends React.Component{
     constructor(props){
         super(props);
-        this.state = { isToggledOn: false};
-
+        this.toggleCondition = this.props.toggleYes;
+        this.state = { isToggledOn: this.toggleCondition};
         this.isClicked = this.isClicked.bind(this);
     }
 
