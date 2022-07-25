@@ -2,11 +2,11 @@ import pc2 from "./../../Assets/pc2.svg";
 import '../../style.css';
 
 import { Container, Row, Col } from "react-bootstrap";
-import {FaInstagram,
-        FaLinkedinIn,
-        FaDiscord,
-        FaYoutube,
-        FaTwitter } from "react-icons/fa";
+import { FiInstagram,
+          FiLinkedin,
+          FiYoutube,
+          FiTwitter } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 
 function Contact() {
@@ -30,20 +30,20 @@ function Contact() {
             </div>
 
             <div className="socials">
-              <a href="#youtube" >
-                <FaYoutube size={25} color='black' />
+              <a href="#youtube" target="_blank">
+                <FiYoutube size={25} color='black' />
               </a>
-              <a href="#linkedin" >
-                <FaLinkedinIn size={25} color='black' />
+              <a href="#linkedin" target="_blank">
+                <FiLinkedin size={25} color='black' />
               </a>
-              <a href="#Discord">
-                <FaDiscord size={25} color='black'  />
+              <a href="#Discord" target="_blank">
+                <TbBrandDiscord size={27} color='black' />
               </a>{" "}
-              <a href="#Twitter">
-                <FaTwitter size={25} color='black' />
+              <a href="#Twitter" target="_blank">
+                <FiTwitter size={25} color='black' />
               </a>{" "}
-              <a href="#Instagram">
-                <FaInstagram size={25} color='black' />
+              <a href="https://www.instagram.com/mbrllahacks/" target="_blank">
+                <FiInstagram size={25} color='black' />
               </a>
             </div>
           </Col>

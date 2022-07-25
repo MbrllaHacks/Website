@@ -1,11 +1,11 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./../../Assets/logo.svg";
 import '../../style.css';
-import { FaInstagram,
-         FaLinkedinIn,
-         FaDiscord,
-         FaYoutube,
-         FaTwitter } from "react-icons/fa";
+import { FiInstagram,
+         FiLinkedin,
+         FiYoutube,
+         FiTwitter } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 function NavbarComp() {
   return (
@@ -41,22 +41,22 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#youtube" className="nel">
-              <FaYoutube size={25} color='black' />
+            <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel">
+              <FiYoutube size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#linkedin" className="nel">
-              <FaLinkedinIn size={25} color='black' />
+            <Nav.Link eventKey={2} href="#linkedin" target="_blank" className="nel">
+              <FiLinkedin size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#Discord" className="nel">
-              <FaDiscord size={25} color='black'  />
+            <Nav.Link eventKey={2} href="#Discord" target="_blank" className="nel">
+              <TbBrandDiscord size={27} color='black'  />
             </Nav.Link>
             {/* Add Discord Link here */}
-            <Nav.Link eventKey={2} href="#Twitter" className="nel">
-              <FaTwitter size={25} color='black' />
+            <Nav.Link eventKey={2} href="#Twitter" target="_blank" className="nel">
+              <FiTwitter size={25} color='black' />
             </Nav.Link>
             {/* Add Twitter Link here */}
-            <Nav.Link eventKey={2} href="#Instagram" className="nel">
-              <FaInstagram size={25} color='black' />
+            <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel">
+              <FiInstagram size={25} color='black' />
             </Nav.Link>
             {/* Add Insta link here   */}
           </Nav>

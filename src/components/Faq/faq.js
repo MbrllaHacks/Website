@@ -10,14 +10,14 @@ function Faq(){
     var qAndA_Left = {
                 "Does this cost money?":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat eaque at amet! Nobis, natus? Excepturi ea consectetur voluptate ipsa iusto aut. Aspernatur, veritatis. Ut exercitationem officia harum ullam corrupti.",
                 "What if this is my first time at a hackathon?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!",
-                "What kinds of events will be there?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!",
-                "When do hacker applications open?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!"}
+                "What kinds of events will be there?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!"}
 
     var qAndA_Right = {"Who can participate?": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores nesciunt eligendi, ratione necessitatibus aliquam tempore. Expedita iste alias consequuntur minima. Libero saepe exercitationem quam accusamus dignissimos deleniti? Mollitia, reiciendis!",
                 "How many people can be on a team?":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat eaque at amet! Nobis, natus? Excepturi ea consectetur voluptate ipsa iusto aut. Aspernatur, veritatis. Ut exercitationem officia harum ullam corrupti.",
                 "How do I form a team?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!",
                 "What is the judging criteria?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!",
-                "Are there prizes?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!"}
+                "Are there prizes?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!",
+                "When do hacker applications open?":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. In omnis culpa eveniet, nisi veritatis repudiandae quis facere, vero molestiae vel ratione a fugiat qui debitis, corporis harum beatae placeat excepturi!"}
 
     return(
         <section>

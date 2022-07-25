@@ -10,7 +10,6 @@
 @keyframes BlackInAnimation {
   0% {
     opacity: 0;
-    background-color: #000000;
   }
   100% {
     opacity: 1;
@@ -18,15 +17,36 @@
 }
 
 /* ----------------------------------------------- App.js/Loading --------------------------------------------------- */
-.loading-screen{
-  background-color: black;
+
+@keyframes LoadingAnimation {
+  0% {
+    opacity: 0;
+    background-color: #000000;
+  }
+
+  20% {
+    opacity: 1;
+    background-color: #000000;
+  }
+
+  75% {
+    opacity: 1;
+    background-color: #000000;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading-screen {
+  animation: LoadingAnimation ease-in-out 4.1s;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
 }
-.loading-gif{
+.loading-gif {
   width: 100%;
 }
 
@@ -75,6 +95,9 @@
   font-size: 26px;
   line-height: 45px;
   color: #ffffff;
+  position: relative;
+  bottom: 60px;
+  right: 10px;
 }
 
 .register:hover {
@@ -108,7 +131,6 @@
 }
 
 .dates {
-  font-family: "Fira Code";
   font-style: bold;
   font-weight: 400;
   font-size: 28px;
@@ -119,7 +141,8 @@
 }
 
 .home-nick {
-  filter: drop-shadow(100px 5px 100px #2883d7);
+  filter: drop-shadow(100px 5px 100px);
+  -webkit-filter: drop-shadow(10px 5px 100px #2883d7);
   margin-bottom: 30px;
 }
 
@@ -129,6 +152,7 @@
   z-index: -1;
   position: relative;
   right: 140px;
+  bottom: 60px;
 }
 
 .home-section {
@@ -151,7 +175,14 @@
   }
 }
 
-@media (min-width: 575px) and (max-width: 766px) {
+@media (max-width: 768px) {
+  .register {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
   .prin {
     position: relative;
     bottom: 150px;
@@ -196,13 +227,14 @@
   position: relative;
   bottom: 60px;
   filter: drop-shadow(100px 5px 100px #2883d7);
+  -webkit-filter: drop-shadow(10px 5px 100px #2883d7);
 }
 
 .about-text {
   width: 700px;
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 25px;
   line-height: 40px;
 
@@ -274,6 +306,10 @@
   margin: 30px;
 }
 
+.sponsorUs:hover {
+  background: #0385ff;
+}
+
 .sponsors-prin {
   width: 250px;
   transform: rotate(-126.32deg);
@@ -286,7 +322,7 @@
   width: 600px;
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 25px;
   line-height: 40px;
 
@@ -295,6 +331,7 @@
 
 .sponsors-img {
   filter: drop-shadow(100px 5px 100px #2883d7);
+  -webkit-filter: drop-shadow(10px 5px 100px #2883d7);
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
@@ -388,7 +425,7 @@ img.underline {
   font-size: 27px;
 }
 
-#main{
+#main {
   margin-left: 30px;
 }
 
@@ -418,8 +455,8 @@ img.underline {
   display: inline-block;
   font-size: larger;
   position: relative;
-  bottom: 36px;
-  right: 20px;
+  bottom: 37px;
+  right: 30px;
 }
 
 .expand-button:hover {
@@ -429,8 +466,7 @@ img.underline {
 
 .collapsible-group .group-content {
   max-height: 0;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.7s;
+  transition: all 0.5s;
   overflow: hidden;
 }
 
@@ -465,6 +501,11 @@ img.underline {
   line-height: 45px;
   color: #ffffff;
 }
+
+.button-send:hover {
+  background: #0385ff;
+}
+
 .contact-header {
   font-size: 60px;
   color: #2883d7;
@@ -510,6 +551,7 @@ img.underline {
 .contact-img {
   max-width: 300px;
   filter: drop-shadow(100px 5px 100px #2883d7);
+  -webkit-filter: drop-shadow(10px 5px 100px #2883d7);
 }
 
 .socials > * {
@@ -567,12 +609,12 @@ img.underline {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-60rem, 0, 0); /* Adjust this image width */
+    transform: translate3d(-169rem, 0, 0); /* Adjust this image width */
   }
 }
 
 .circle {
-  animation: slide 7s linear infinite; /* Adjust the time here */
+  animation: slide 20s linear infinite; /* Adjust the time here */
 }
 
 .teams-title {
@@ -716,15 +758,6 @@ input#panel {
   padding: 2px;
 }
 
-#pfp:hover ~ .panel::after {
-  transform: scaleX(1) scaleY(1);
-}
-
-#pfp:hover ~ .org-name {
-  display: none;
-  position: absolute;
-}
-
 /* #panel:checked + .panel:before {
     transform: scaleX(0.000001);
     opacity: 0;
@@ -768,45 +801,47 @@ input#panel {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
     transform: translateY(-30px);
   }
   100% {
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
-}
-.panel,
-.stick {
-  transition-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  transform: scale(0);
 }
 
 #pfp:hover ~ .panel {
   transform: scaleX(1) scaleY(1);
   cursor: pointer;
   animation-name: bounce;
-  -moz-animation-name: bounce;
 }
 
 #pfp:hover ~ .stick {
   transform: scaleX(1) scaleY(1);
   cursor: pointer;
   animation-name: bounce;
-  -moz-animation-name: bounce;
 }
 
 #pfp:hover {
   border: 4px solid #2883d7;
+}
+
+#pfp:hover ~ .panel::after {
+  transform: scaleX(1) scaleY(1);
+}
+
+#pfp:hover ~ .org-name {
+  display: none;
+  position: absolute;
+}
+
+.panel,
+.stick {
+  transition: transform 0.3s ease-in;
+  -webkit-transition: 0.3s transform ease-in;
+  animation-duration: 0.5s;
+  transform: scale(0);
 }
 
 /* -----------------------------------------------  Footer Page -----------------------------------------------   */
