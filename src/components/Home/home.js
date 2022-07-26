@@ -28,9 +28,9 @@ function Home(){
     
                     <div style={{ padding: 20 }} className= "register-comp fadeInBottom">
                         <a href="https://forms.gle/Nw7pjuKdSwySp1Wf8">
-                        <button className="register">Get notified!</button>
+                        <button className="register fadeInBottom">Get notified!</button>
                         </a>
-                        <img src={prin} className="prin" alt="prin"></img>
+                        <img src={prin} className="prin fadeInBottom" alt="prin"></img>
                     </div>
                 </Col>
 
