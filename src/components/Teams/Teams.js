@@ -2,6 +2,7 @@ import '../../style.css';
 import {Container} from "react-bootstrap"
 import Circle from './circle.js'
 import sample from './../../Assets/pfp.png'
+import contributors from "./contributers.json"
 
 
 function TeamsComp() {
@@ -15,34 +16,25 @@ function TeamsComp() {
             Wilson, Lead Organizer
         </div>
         <div className='cir-container'>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/wilson.png" name="Wilson, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/marina.png" name="Marina, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/ingrid.png" name="Ingrid, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/shion.png" name="Shion, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/nate.png" name="Nate, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/nusha.png" name="Nusha, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/arshaan.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/devin.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/julia.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/minnie.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/owen.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/tom.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/amisha.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image={sample} name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image={sample} name="Saitama, Lead Destroyer"/></div>
+            {Object.entries(contributors).map(([key, value]) => {
+              const imgLink = `https://mbrlla.s3.us-west-1.amazonaws.com/${key}.png`
+              const name = value[0]
+              const contribution = value[1]
+              return (  
+              <div className='circle'><Circle image={imgLink} name={name} contribution={contribution} /></div>
 
-            {/* Repeat first 9 images to get a infinite carsouel effect */}
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/wilson.png" name="Wilson, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/marina.png" name="Marina, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/ingrid.png" name="Ingrid, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/shion.png" name="Shion, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/nate.png" name="Nate, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/nusha.png" name="Nusha, Lead Organizer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/arshaan.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/devin.png" name="Saitama, Lead Destroyer"/></div>
-            <div className='circle'><Circle image="https://mbrlla.s3.us-west-1.amazonaws.com/julia.png" name="Saitama, Lead Destroyer"/></div>
+            )})}
 
+            {/* Lopping through first nine entries to create a looping effect  */}
 
+            {Object.entries(contributors).slice(0,9).map(([key, value]) => {
+              const imgLink = `https://mbrlla.s3.us-west-1.amazonaws.com/${key}.png`
+              const name = value[0]
+              const contribution = value[1]
+              return (  
+              <div className='circle'><Circle image={imgLink} name={name} contribution={contribution} /></div>
+
+            )})}
         </div>
     </div>
     </Container>

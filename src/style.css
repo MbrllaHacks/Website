@@ -162,7 +162,7 @@
 .quote {
   font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-size: 85px;
   line-height: 80px;
   color: #2883d7;
@@ -300,10 +300,12 @@
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 45px;
   color: #ffffff;
   margin: 30px;
+  position: relative;
+  right: 35px;
 }
 
 .sponsorUs:hover {
@@ -315,7 +317,7 @@
   transform: rotate(-126.32deg);
   z-index: -1;
   position: relative;
-  right: 170px;
+  right: 220px;
 }
 
 .sponsors-text {
@@ -338,14 +340,14 @@
   .sponsors-prin {
     position: relative;
     bottom: 190px;
-    left: 180px;
+    left: 160px;
   }
 }
 
 @media (min-width: 767px) and (max-width: 990px) {
   .sponsors-prin {
     position: relative;
-    left: -170px;
+    left: -200px;
     bottom: 0px;
   }
 }
@@ -368,7 +370,7 @@
   .sponsorUs {
     width: 220px;
     height: 70px;
-    font-size: 19px;
+    font-size: 21px;
   }
   .sponsors-prin {
     position: absolute;
@@ -498,8 +500,8 @@ img.underline {
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
-  line-height: 45px;
   color: #ffffff;
+  padding: 5px !important;
 }
 
 .button-send:hover {
@@ -559,8 +561,6 @@ img.underline {
 }
 
 .sign-up-box {
-  padding: 20px;
-
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
@@ -578,18 +578,17 @@ img.underline {
   }
 
   .sign-up > * {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 
   .button-send {
-    width: 80px;
-    height: 50px;
+    width: 70px;
+    height: 30px;
     border-radius: 10px;
     background: #2883d7;
     border: none;
     font-family: "Space Grotesk";
     font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     color: #ffffff;
   }
@@ -831,7 +830,7 @@ input#panel {
   transform: scaleX(1) scaleY(1);
 }
 
-#pfp:hover ~ .org-name {
+#pfp:hover ~ .img-label {
   display: none;
   position: absolute;
 }
@@ -844,6 +843,21 @@ input#panel {
   transform: scale(0);
 }
 
+.org-name,
+.org-contribution {
+  text-align: center;
+}
+
+.org-name {
+  font-size: 17px;
+}
+
+.org-contribution {
+  position: relative;
+  bottom: 20px;
+  color: #2883d7;
+  font-size: 15px;
+}
 /* -----------------------------------------------  Footer Page -----------------------------------------------   */
 
 .footer {
@@ -916,10 +930,16 @@ span button {
 
 .lower-text-box {
   text-align: center;
+  font-size: 15px;
 }
 
 .footer-logo {
   position: relative;
   bottom: 15px;
   width: 285px;
+}
+
+.white-font {
+  color: white;
+  text-decoration: none;
 }
