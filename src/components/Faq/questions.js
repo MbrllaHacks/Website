@@ -1,7 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import '../../style.css';
-import { BsPlusLg } from "react-icons/bs";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 class ToggleableAnswer extends React.Component{

@@ -37,17 +37,14 @@ function Sponsors(){
             </Col>
 
             <Col lg={5} >
+              
+                  {/* Hands image */}
                     <img src={hands} 
                     alt="hands"
                     className="img-fluid sponsors-img"
                     style={{ maxHeight: "400px" }}
                     ></img>
-            </Col>
-
-                
-
-                
-                {/* Hands image */}
+            </Col>    
 
             </Row>
 

@@ -1,7 +1,6 @@
 import '../../style.css';
 import {Container} from "react-bootstrap"
 import Circle from './circle.js'
-import sample from './../../Assets/pfp.png'
 import contributors from "./contributers.json"
 import React, { useState } from 'react';
 

@@ -2,7 +2,6 @@ import '../../style.css';
 import prin from "./../../Assets/prin.svg"
 import nick from "./../../Assets/nick.png"
 import {Container, Row, Col } from "react-bootstrap"
-import React, { useState, useEffect} from 'react'
 
 
 function Home(){

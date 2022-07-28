@@ -1,6 +1,5 @@
 import pc2 from "./../../Assets/pc2.svg";
 import '../../style.css';
-
 import { Container, Row, Col } from "react-bootstrap";
 import { FiInstagram,
           FiLinkedin,
@@ -30,19 +29,19 @@ function Contact() {
             </div>
 
             <div className="socials">
-              <a href="#youtube" target="_blank">
+              <a href="#youtube" target="_blank" rel="noreferrer">
                 <FiYoutube size={25} color='black' />
               </a>
-              <a href="#linkedin" target="_blank">
+              <a href="#linkedin" target="_blank" rel="noreferrer">
                 <FiLinkedin size={25} color='black' />
               </a>
-              <a href="#Discord" target="_blank">
+              <a href="#Discord" target="_blank" rel="noreferrer">
                 <TbBrandDiscord size={27} color='black' />
               </a>{" "}
-              <a href="#Twitter" target="_blank">
+              <a href="#Twitter" target="_blank" rel="noreferrer">
                 <FiTwitter size={25} color='black' />
               </a>{" "}
-              <a href="https://www.instagram.com/mbrllahacks/" target="_blank">
+              <a href="https://www.instagram.com/mbrllahacks/" target="_blank" rel="noreferrer">
                 <FiInstagram size={25} color='black' />
               </a>
             </div>

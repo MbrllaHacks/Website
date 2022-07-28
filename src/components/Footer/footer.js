@@ -36,12 +36,12 @@ function FooterComp() {
         </Row>
         <Row className="lower-box">
           <Col lg={12} className="lower-text-box">
-              <span className="white-font">Pictures from <a target="_blank" href="https://www.streamlinehq.com/">Streamline</a></span>
+              <span className="white-font">Pictures from <a target="_blank" href="https://www.streamlinehq.com/" rel="noreferrer">Streamline</a></span>
           </Col>
           </Row>
           <Row className="lower-box">
           <Col lg={12} className="lower-text-box">
-            <a href="https://youtu.be/xvFZjo5PgG0" target="_blank" className="white-font">Secret way to win this hackathon</a>
+            <a href="https://youtu.be/xvFZjo5PgG0" target="_blank" className="white-font" rel="noreferrer">Secret way to win this hackathon</a>
           </Col>
         </Row>
       </Container>

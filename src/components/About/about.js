@@ -2,7 +2,6 @@ import '../../style.css';
 import nickumbrella from "./../../Assets/nickumbrella.png"
 import logo from "./../../Assets/logo.svg"
 import {Container, Row, Col } from "react-bootstrap"
-import React, { useState, useEffect } from 'react'
 
 
 

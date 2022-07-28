@@ -41,21 +41,21 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel">
+            <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel" rel="noreferrer">
               <FiYoutube size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#linkedin" target="_blank" className="nel">
+            <Nav.Link eventKey={2} href="#linkedin" target="_blank" className="nel" rel="noreferrer">
               <FiLinkedin size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#Discord" target="_blank" className="nel">
+            <Nav.Link eventKey={2} href="#Discord" target="_blank" className="nel" rel="noreferrer">
               <TbBrandDiscord size={27} color='black'  />
             </Nav.Link>
             {/* Add Discord Link here */}
-            <Nav.Link eventKey={2} href="#Twitter" target="_blank" className="nel">
+            <Nav.Link eventKey={2} href="#Twitter" target="_blank" className="nel" rel="noreferrer">
               <FiTwitter size={25} color='black' />
             </Nav.Link>
             {/* Add Twitter Link here */}
-            <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel">
+            <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel" rel="noreferrer">
               <FiInstagram size={25} color='black' />
             </Nav.Link>
             {/* Add Insta link here   */}
