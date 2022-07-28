@@ -611,12 +611,18 @@ img.underline {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-169rem, 0, 0); /* Adjust this image width */
+    transform: translate3d(-169rem, 0, 0);
+    /* Add -7.041666667 to x in translate3d( "x" rem, 0, 0) to every circle you add in the contributer list to maintain the loop */
   }
 }
 
 .circle {
   animation: slide 20s linear infinite; /* Adjust the time here */
+  animation-play-state: running;
+}
+.circle-paused {
+  animation: slide 20s linear infinite; /* Adjust the time here */
+  animation-play-state: paused;
 }
 
 .teams-title {
