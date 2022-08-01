@@ -1,19 +1,18 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "./../../Assets/logo.svg";
-import a from "./../../Assets/a.svg";
-import disc from "./../../Assets/disc.svg";
-import twitter from "./../../Assets/twitter.svg";
-import insta from "./../../Assets/instagram.svg";
-import linkedin from "./../../Assets/linkedin.svg";
-import youtube from "./../../Assets/youtube.svg";
-import "./navbar.css";
+import '../../style.css';
+import { FiInstagram,
+         FiLinkedin,
+         FiYoutube,
+         FiTwitter } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 function NavbarComp() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} width="285px" className="nel mw-100"></img>
+          <img src={logo} width="285px" className="nel mw-100" alt="logo"></img>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -42,22 +41,22 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#youtube" className="nel">
-              <img src={youtube} width="30px"></img>
+            <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel" rel="noreferrer">
+              <FiYoutube size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#linkedin" className="nel">
-              <img src={linkedin} width="30px"></img>
+            <Nav.Link eventKey={2} href="#linkedin" target="_blank" className="nel" rel="noreferrer">
+              <FiLinkedin size={25} color='black' />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#Discord" className="nel">
-              <img src={disc} width="30px"></img>
+            <Nav.Link eventKey={2} href="#Discord" target="_blank" className="nel" rel="noreferrer">
+              <TbBrandDiscord size={27} color='black'  />
             </Nav.Link>
             {/* Add Discord Link here */}
-            <Nav.Link eventKey={2} href="#Twitter" className="nel">
-              <img src={twitter} width="30px"></img>
+            <Nav.Link eventKey={2} href="#Twitter" target="_blank" className="nel" rel="noreferrer">
+              <FiTwitter size={25} color='black' />
             </Nav.Link>
             {/* Add Twitter Link here */}
-            <Nav.Link eventKey={2} href="#Instagram" className="nel">
-              <img src={insta} width="30px"></img>
+            <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel" rel="noreferrer">
+              <FiInstagram size={25} color='black' />
             </Nav.Link>
             {/* Add Insta link here   */}
           </Nav>

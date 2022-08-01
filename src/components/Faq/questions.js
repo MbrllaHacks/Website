@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Row, Col} from "react-bootstrap";
-import './faq.css';
-import { useRef } from "react";
+import { Row } from "react-bootstrap";
+import '../../style.css';
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 class ToggleableAnswer extends React.Component{
     constructor(props){
         super(props);
-        this.state = { isToggledOn: false};
-
+        this.toggleCondition = this.props.toggleYes;
+        this.state = { isToggledOn: this.toggleCondition};
         this.isClicked = this.isClicked.bind(this);
     }
 
@@ -17,16 +17,17 @@ class ToggleableAnswer extends React.Component{
         }));
     }
 
-    expandText(){
-        console.log(this.props.children);
-        return (this.props.children)
-    }
-
     render(){
         return(
             <Row className="collapsible-group">
-                <div onClick={this.isClicked} className="expand-button">+</div>
-                <p className="group-content">{this.state.isToggledOn ? this.expandText(): ""}</p>
+
+                <div onClick={this.isClicked} className="expand-button">{this.state.isToggledOn ? <AiOutlineMinus/> : <AiOutlinePlus/> }</div>
+                
+                <p className={this.state.isToggledOn ? "group-content active":"group-content"} style={{fontSize: 22}}>
+                    {this.props.children}
+                </p>
+                
+                
             </Row>
         );
     }

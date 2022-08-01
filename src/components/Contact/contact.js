@@ -1,13 +1,11 @@
-import a from "./../../Assets/a.svg";
-import disc from "./../../Assets/disc.svg";
-import twitter from "./../../Assets/twitter.svg";
-import insta from "./../../Assets/instagram.svg";
 import pc2 from "./../../Assets/pc2.svg";
-import prin from "./../../Assets/prin.svg";
-import linkedin from "./../../Assets/linkedin.svg";
-import youtube from "./../../Assets/youtube.svg";
-import "./contact.css";
+import '../../style.css';
 import { Container, Row, Col } from "react-bootstrap";
+import { FiInstagram,
+          FiLinkedin,
+          FiYoutube,
+          FiTwitter } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 
 function Contact() {
@@ -31,20 +29,20 @@ function Contact() {
             </div>
 
             <div className="socials">
-              <a href="#youtube" >
-                <img src={youtube}></img>
+              <a href="#youtube" target="_blank" rel="noreferrer">
+                <FiYoutube size={25} color='black' />
               </a>
-              <a href="#linkedin" >
-                <img src={linkedin}></img>
+              <a href="#linkedin" target="_blank" rel="noreferrer">
+                <FiLinkedin size={25} color='black' />
               </a>
-              <a href="#Discord">
-                <img src={disc}></img>
+              <a href="#Discord" target="_blank" rel="noreferrer">
+                <TbBrandDiscord size={27} color='black' />
               </a>{" "}
-              <a href="#Twitter">
-                <img src={twitter} alt="Twitter"></img>
+              <a href="#Twitter" target="_blank" rel="noreferrer">
+                <FiTwitter size={25} color='black' />
               </a>{" "}
-              <a href="#Instagram">
-                <img src={insta} alt="Twitter"></img>
+              <a href="https://www.instagram.com/mbrllahacks/" target="_blank" rel="noreferrer">
+                <FiInstagram size={25} color='black' />
               </a>
             </div>
           </Col>
