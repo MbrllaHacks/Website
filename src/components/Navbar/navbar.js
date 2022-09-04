@@ -11,13 +11,23 @@ function NavbarComp() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
+        {/* Logo on top */}
+
         <Navbar.Brand href="#home">
           <img src={logo} width="285px" className="nel mw-100" alt="logo"></img>
         </Navbar.Brand>
+
+
+        {/* Hamburger menu */}
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="navToggle"
         />
+        
+
+        {/* Links to different sections of the page */}
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="navele align-items-center">
@@ -41,6 +51,10 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
+
+
+            {/* Links to Socials */}
+
             <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel" rel="noreferrer">
               <FiYoutube size={25} color='black' />
             </Nav.Link>
@@ -58,7 +72,7 @@ function NavbarComp() {
             <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel" rel="noreferrer">
               <FiInstagram size={25} color='black' />
             </Nav.Link>
-            {/* Add Insta link here   */}
+
           </Nav>
         </Navbar.Collapse>
       </Container>

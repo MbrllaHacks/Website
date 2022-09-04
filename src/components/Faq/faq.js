@@ -2,7 +2,7 @@ import '../../style.css';
 import { Container, Row, Col} from "react-bootstrap";
 import "./questions.js";
 import ToggleableAnswer from "./questions.js";
-import crossPattern from "./../../Assets/crossPattern.png";
+
 
 //"What is Mbrlla Hacks?": "Mbrlla Hacks is a virtual hackathon, where hackers of all levels and backgrounds team up to create a coding project from scratch in just 48 hours. Alongside this, we provide participants with workshops and other resources to help them turn their ideas into a reality.
 
@@ -23,7 +23,6 @@ function Faq(){
         <section>
             <Container className="faq-section" id="faq">
                 <Container className="faq-content">
-                    <img src={crossPattern} className="pattern" alt="Cross"></img>
                     <h1 id="faq-title" className="title">Frequently Asked Questions</h1>
 
                     <Row >

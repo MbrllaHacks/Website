@@ -9,7 +9,7 @@ import Faq from './components/Faq/faq';
 import TeamsComp from './components/Teams/Teams';
 import Loading from './loading.js'
 import React, { useState, useEffect } from 'react'
-
+import Ctf from './components/CTF/ctf';
 
 
 
@@ -20,25 +20,28 @@ function App() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
   }, [])
+  
   return (
     <>
     {loading === false ? (
-    <div className='main-site'>
-      <NavbarComp /> 
-      <Home />
-      <About/>
-      <Sponsors/>
-      <Faq/>
-      <Contact />
-      <TeamsComp/>
-      <FooterComp />
-    </div>
+        <div className='main-site'>
+          <NavbarComp /> 
+          <Home />
+          <About/>
+          <Sponsors/>
+          <Faq/>
+          <Contact />
+          <TeamsComp/>
+          <Ctf />
+          <FooterComp />
+        </div>
     ) : (
       <div>
         <Loading />
       </div>
     )}
     </>
+    
   );
 }
 
