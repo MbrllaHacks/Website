@@ -6,8 +6,15 @@ import { FiInstagram,
          FiYoutube,
          FiTwitter } from "react-icons/fi";
 import { TbBrandDiscord } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 
 function NavbarComp() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate("/ctf");
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
@@ -50,6 +57,14 @@ function NavbarComp() {
               className="typo nel"
             >
               FAQ
+            </Nav.Link>
+
+            <Nav.Link
+              eventKey={2}
+              onClick={handleClick}
+              className="typo nel"
+            >
+              CTF
             </Nav.Link>
 
 

@@ -9,7 +9,12 @@ import Faq from './components/Faq/faq';
 import TeamsComp from './components/Teams/Teams';
 import Loading from './loading.js'
 import React, { useState, useEffect } from 'react'
-import Ctf from './components/CTF/ctf';
+import Ctf from './components/CTF/ctf.js';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import Challenge1 from "./components/CTF/challenge1";
+import Challenge2 from "./components/CTF/challenge2";
+import Challenge3 from "./components/CTF/challenge3";
+import Challenge4 from "./components/CTF/challenge4";
 
 
 
@@ -24,17 +29,30 @@ function App() {
   return (
     <>
     {loading === false ? (
+      <BrowserRouter>
         <div className='main-site'>
-          <NavbarComp /> 
-          <Home />
-          <About/>
-          <Sponsors/>
-          <Faq/>
-          <Contact />
-          <TeamsComp/>
-          <Ctf />
-          <FooterComp />
+          <Routes>
+            <Route path="/" element={
+              <>
+              <NavbarComp /> 
+              <Home />
+              <About/>
+              <Sponsors/>
+              <Faq/>
+              <Contact />
+              <TeamsComp/>
+              <FooterComp />
+              </>
+            } />
+            <Route path="/ctf" element={<Ctf />} />
+              <Route path="/ctf/challenge1" element={<Challenge1 />} />
+              <Route path="/ctf/challenge2" element={<Challenge2 />} />
+              <Route path="/ctf/challenge3" element={<Challenge3 />} />
+              <Route path="/ctf/challenge4" element={<Challenge4 />} />
+            </Routes>
         </div>
+      </BrowserRouter>
+      
     ) : (
       <div>
         <Loading />

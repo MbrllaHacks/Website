@@ -860,3 +860,26 @@ span button {
   color: white;
   text-decoration: none;
 }
+
+/* -----------------------------------------------  Capture the Flag  -----------------------------------------------   */
+
+.challengeList {
+  position: absolute;
+  max-width: 500px;
+  width: 500px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ctf-links {
+  text-decoration: none;
+  color: #333;
+}
+
+.ctf-item {
+  border-radius: 10px;
+  background-color: #b1a7a6;
+  margin: 10px;
+}
