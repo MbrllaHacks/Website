@@ -1,6 +1,8 @@
 import '../../style.css';
 
 
+// Our magic to beautiful umbrella animation lies here 
+
 function Circle(props) {
   return (
         <div class="umbrella" onMouseEnter={props.changeName}>

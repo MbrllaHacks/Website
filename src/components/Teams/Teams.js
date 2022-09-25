@@ -16,12 +16,18 @@ function TeamsComp() {
   return (
     <Container>
     <div >
+
+      {/* Dynamic title change on hover  */}
+
         <div className='teams-title'>
             <b>Brought to you by</b>
         </div>
         <div className='teams-subtitle'>
             {name}
         </div>
+
+      {/* Infinite Carousel in Teams Page  */}
+
         <div className='cir-container'>
             {Object.entries(contributors).map(([key, value]) => {
               const imgLink = `https://mbrlla.s3.us-west-1.amazonaws.com/${key}.png`

@@ -20,7 +20,7 @@ function Home(){
                     </div>
 
                     <div className="dates fadeInBottom">
-                        OCT 08 - OCT 09
+                        Upcoming in 2023...
                     </div>
 
                     {/* Register Button */}

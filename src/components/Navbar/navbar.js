@@ -6,18 +6,35 @@ import { FiInstagram,
          FiYoutube,
          FiTwitter } from "react-icons/fi";
 import { TbBrandDiscord } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 
 function NavbarComp() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate("/ctf");
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
+        {/* Logo on top */}
+
         <Navbar.Brand href="#home">
           <img src={logo} width="285px" className="nel mw-100" alt="logo"></img>
         </Navbar.Brand>
+
+
+        {/* Hamburger menu */}
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="navToggle"
         />
+        
+
+        {/* Links to different sections of the page */}
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="navele align-items-center">
@@ -41,6 +58,18 @@ function NavbarComp() {
             >
               FAQ
             </Nav.Link>
+
+            <Nav.Link
+              eventKey={2}
+              onClick={handleClick}
+              className="typo nel"
+            >
+              CTF
+            </Nav.Link>
+
+
+            {/* Links to Socials */}
+
             <Nav.Link eventKey={2} href="#youtube" target="_blank" className="nel" rel="noreferrer">
               <FiYoutube size={25} color='black' />
             </Nav.Link>
@@ -58,7 +87,7 @@ function NavbarComp() {
             <Nav.Link eventKey={2} href="https://www.instagram.com/mbrllahacks/" target="_blank" className="nel" rel="noreferrer">
               <FiInstagram size={25} color='black' />
             </Nav.Link>
-            {/* Add Insta link here   */}
+
           </Nav>
         </Navbar.Collapse>
       </Container>
